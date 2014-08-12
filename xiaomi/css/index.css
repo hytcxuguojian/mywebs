@@ -1,0 +1,256 @@
+*{margin: 0; padding: 0;}
+body{ width: 100%; text-align: left; font-size: 12px; font-family: arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;}
+img{ border: 0px; }
+a{ color: #8C8C8C; text-decoration: none;}
+ul,li{ list-style: none; list-style-position: outside; }
+
+.backToHomePage{ display: block; width: 100px; height: 50px; text-decoration: none; position: absolute; top: 50px; left: 400px; z-index: 100; line-height: 50px; font-size: 18px; font-weight: bold; background-color: #dfdfdf; color: #ff4a00;}
+/******************主要框架begin******************/
+#topnav{ width: 100%; height: 36px; border-bottom: 1px solid #DFDFDF; color: #8C8C8C; background-color: #fafafa; font-size: 12px; line-height: 36px;}
+#daohang{ width: 1240px; height: 135px; padding-top: 25px; margin: 0 auto; position: relative;}
+#homeStarGoods{ width: 1240px; height: 360px; margin: 10px auto 15px auto;}
+#homeNewGoods{ width: 1240px; height: 980px;  margin: 10px auto 15px auto;}
+#homePeopleLove{ width: 1240px; height: 671px; margin: 10px auto 15px auto;}
+#hotGoods{ width: 1242px; height: 462px;  margin: 10px auto 15px auto; }
+#homeSaleoffGoods{ width: 1242px; height: 362px;  margin: 10px auto 15px auto; }
+#duokanGoods{ width: 1242px; height: 462px;  margin: 10px auto 15px auto; }
+#homeMiuiGoods{ width: 1242px; height: 387x;  margin: 10px auto 15px auto; }
+#footer{margin-top: 50px;color: #333;background: #fafafa;}
+/******************主要框架 end ******************/
+
+/******************页眉 begin******************/
+#topNavInner{ width: 1240px; height: 36px; margin: 0 auto; }
+#topNavLeft{ width: 438px; height: 36px; float: left; }
+#topNavRight{ width: 80px; height: 28px; float: right;}
+.TopA{ color: #8C8C8C;}
+.TopA:hover{ color: #333;}
+.TopSpan{ margin: 0 10px; color: #DFDFDF;}
+/******************页眉 end ******************/
+
+/******************导航栏 end ******************/
+#xiaomi{ width: 70px; height: 70px; display: block; position: absolute; background-image: url("images/site-logo.png");}
+#openBuyInfo{ width: 158px; height: 16px; line-height: 16px; font-size: 12px; padding-left: 20px; background-image: url("images/icon-open-buy.png"); background-repeat: no-repeat; position: absolute; top: 20px; right: 0;}
+#openBuyInfo:hover{ color: #ff4a00; background-position: 0 -16px;}
+#searchSection{ width: 560px; height: 40px; margin-bottom: 30px; position: absolute; top: 55px; right: 0; }
+#searchBar{ position: relative; width: 422px; height: 38px; border: 1px solid #dfdfdf; float: left; }
+#searchText{ display: block; float: left; width: 352px; height: 20px; font-size: 14px; outline: none; padding: 9px 15px; border: 0; line-height: 20px; color: #333; background: #fff;}
+#searchLogo{ width: 38px; height: 38px; display: block; float: right; background-image: url("images/search1.jpg"); }
+#shopingCar{ position: relative; z-index: 21; display: block; float: right; width: 104px; height: 20px; padding: 9px 10px; font-size: 14px; border: 1px solid #ffdb3d; line-height: 20px; text-align: center; color: #333; background: #ffdb3d;}
+#shopingCarSub1{position: absolute; top: 0; right: 0; z-index: 23; display: none; width: 104px; height: 35px; padding: 9px 10px; font-size: 14px; border: 1px solid #ff4a00; border-bottom: 0; line-height: 20px; text-align: center; color: #333; background: #fff;}
+#shopingCarSub2{position: absolute; top: 52px; right: 0; z-index: 22; display: none; width: 292px; height: auto; min-height: 18px; padding: 20px; font-size: 14px; border: 1px solid #ff4a00; line-height: 20px; text-align: center; color: #8C8C8C; background: #fff;}
+.hotWords{ position: absolute; top: 12px; left: 177px; font-size: 12px;}
+.hotWords a{display: inline-block; padding: 1px 3px; margin-left: 5px; color: #333; background: #f3f3f3;}
+.searchList{ width: 382px; padding-top: 15px; position: absolute; z-index: 30; left: -1px; top: 39px; border:1px solid #dfdfdf; border-top: 0; display: none;}
+.searchList li{ width: 367px; height: 30px; padding-left: 15px; line-height: 30px; background-color: #fff; color: #333;}
+.searchList li a{ font-size: 12px; color: #333; }
+
+#danghangMenu{width: 1240px; height: 50px; background-color: #ccc; position: absolute; bottom: 0; left: 0;}
+#danghangMenuL{ display: block; float: left; width: 178px; height: 36px; line-height: 36px; padding: 7px 50px 7px 20px; font-size: 18px; color: #fff; background-color: #ff4a00; text-align: left;}
+#danghangMenuR{ display: block; float: left; width: 992px; height: 50px; background-color: #404144; text-align: center; position: relative;}
+.menuTitle{ display: inline-block; float: left; height: 20px; background-color: #404144; padding:15px 23px; line-height: 20px; font-size: 18px; color: #fff;}
+/*下拉菜单*/
+.childrenList{ border-bottom:1px solid #efefef; border-top: 0; position: absolute; z-index: 5; left: 0; top: 50px; display: none;}
+.first{ width: 495px; height: 200px; display: block; float: left; background-color: #fff; text-align: left; position: relative; border-right: 1px solid #dfdfdf;}
+.itameDetail{ width: 180px; height: 120px; padding: 50px 50px 30px 265px; display: block;}
+.itameDetailTitle{ height: 36px; line-height: 36px; font-size: 24px; color: #000; display: block; cursor: auto;}
+.itameDetailDesc{ line-height: 21px; margin-bottom: 10px; font-size: 14px; display: block; color: #6d6d6d;}
+.itameDetailPrice{height: 27px; font-size:  12px; color: #ff4a00; display: block;}
+.itameDetailPrice b{ margin-right: 3px; font-size: 18px; font-weight: 700;}
+.itameDetailPic{ position: absolute; top:32px; left: 100px;}
+/*下拉菜单 end*/
+#showGoods{ width: 1240px; height: 592px; margin: 0 auto;}
+#goodsCategory{ width: 248px; height: 592px; float: left; position: relative;}
+.goodsCategoryLi{width: 248px; height: 73px; border-bottom: 1px solid #dfdfdf; overflow: hidden;}
+.goodsCategoryLi:hover{ border-left: 3px solid #ff4a00;}
+#showGoodsR{ width: 992px; height: 592px; float: left; }
+.goodsCategoryContent{ width: 216px; height: 43px; padding: 15px 10px 15px 20px; border-left: 1px solid #dfdfdf; border-right: 1px solid #dfdfdf;}
+.goodsCategoryCTitle{ color: #ff4a00; height: 16px; line-height: 16px; font-size: 14px;}
+.links{ width: 230px; height: 16px; line-height: 16px; font-size: 14px; margin-top: 5px;}
+.links a{ display: inline; color: #6d6d6d; margin-right: 7px; float: left;}
+.links a:hover{ color: #333;}
+.linksSection{width:247px; height: auto; display: none; padding: 10px 0; border: 1px solid #dfdfdf; background-color: #fff; position: absolute; left: 248px; bottom: 0; z-index: 3;}
+.linksUL{ width:247px; height: auto; overflow: hidden; }
+.linksSection hr{ width: 187px; display: block; border-top: 1px solid #dfdfdf; margin: 0 30px;}
+.linksUlList{ width: 247px; height: 61px; }
+.linksUlList:hover{ background-color: #efefef;}
+.linksUlList a{ width: 187px; height: 41px; display: block; padding: 10px 30px; line-height: 40px; }
+.linksUlList a img{ width: 40px; height: 40px; margin-right: 20px; display: block; float: left;}
+.text{ display:block; float: left; height: 40px; color: #8C8C8C; line-height: 40px; font-size: 14px;}
+.SectionSpecial{ width: 187px; height: auto; padding: 20px 30px; display: block;}
+.SectionSpecial h4{ display: block; margin: 0 0 5px; font-size: 12px; font-weight: 400; color: black;}
+.SectionSpecial ul{ margin: 0 0 0 20px;}
+.SectionSpecial ul li{ list-style: disc; line-height: 18px; }
+.SectionSpecial ul li a{ color: #6d6d6d;}
+.SectionSpecial ul li a:hover{ color: #333;}
+.direction{ width: 41px; height: 69px; background-image: url("images/icon-slides.png"); cursor: pointer; display: none;}
+#Previous{ position: absolute; top: 190px; left:0px;  background-position: -83px 0; z-index: 3;}
+#Next{ position: absolute; top: 190px; right:0px; background-position: -124px 0; z-index: 3}
+#showGoodsRA{ width: 992px; height: 420px; position: relative;}
+.showGoodsRAPic{ width: 992px; height: 420px; display: none; position: absolute; z-index: 2;}
+.showGoodsRAPic img{ width: 992px; height: 420px;}
+#showGoodsRB{ width: 992px; height: 172px;}
+#showGoodsRB a{ display:block; float: left; width: 330px; height: 170px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+#showGoodsRB a img{ width: 330px; height: 170px;}
+.specialA{ border: 1px solid #CCC;}
+/******************导航栏 end ******************/
+/******************小米明星单品 begin******************/
+.lmNav{ width: 1240px; height: 50px; }
+.lmTitle{ font-size: 18px; font-weight: 400px; line-height: 50px; color: #333; float: left;}
+.more{ width: 60px; height: 20px; margin-top: 20px; float: right;}
+.moreNormal{ display: block; width: 28px; height: 18px; line-height: 18px; font-size: 18px; color: #dfdfdf; text-align: center; border: 1px solid #dfdfdf; float: left; cursor: pointer;}
+.moreNormal:hover{ color: #6d6d6d;}
+.moreActive{ color: #6d6d6d;}
+.moreL{ border-right: 0;}
+#homeStarGoodsC{ width: 1240px; height: 308px; border: 1px solid #dfdfdf; border-right: 0; position: relative; overflow: hidden;}
+#goodsItems{width: 2480px; height: 308px; position: absolute; top:0px; left: 0px;}
+.goodsItem{ width: 309px; height: 309px; border-right: 1px solid #dfdfdf; float: left;}
+.goodsitemContent{ width: 289px; height: 288px; border:6px solid #fff; padding: 4px; text-align: center;}
+.itempic{ width: 289px; height: 220px; margin-bottom: 10px;}
+.itemTitle{ display:block; height: 24px; line-height: 24px; font-size:16px; color:#000;}
+.itemTitle:hover{ color: #ff4a00}
+.itemDesc{ line-height: 18px; font-size: 12px; color: #8c8c8c;}
+/******************小米明星单品 end ******************/
+/******************新品上架 end ******************/
+.moreLink{ width: 60px; height: 50px; display:block; float:right; font-size: 14px; line-height: 50px; text-align: right; color: #333;}
+.moreLink:hover{ color: #ff4a00;}
+.homeNewGoodsContent{ width: 1240px; height: 930px; border: 1px solid #ccc; border-bottom: 0;}
+#hngcLeft{ width:620px; height: 931px; float: left;}
+#hngcLeftUp,#hPLCLeftUp{ width: 618px; height: 309px; display: block; border-right: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf;}
+#hngcLeftCenter,#hPLCLeftCenter{width: 620px; height: 310px; float: left;}
+#hngcLeftCenterL,#hPLCLeftCenterL{ width: 310px; height: 310px; float: left;}
+#hngcLeftCenterR,#hPLCLeftCenterR{ width: 310px; height: 310px; float: left;}
+#hngcLeftDown{ width: 620px; height: 310px;}
+#hngcCenter{ width: 310px; height: 931px; float: left;}
+#hngcRight{  width: 310px; height: 931px; float: left; }
+.contentClass1{ width: 289px; height: 134px; float: left; padding: 9px 10px 10px 10px;  border-right: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; }
+.contentClass1Info{ width: 130px; height: 42px; padding: 20px 0 0 20px; float: left;}
+.contentClass1Ttitle{ width: 100%; font-size: 14px; line-height: 21px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.contentClass1Ttitle a{ color:#000;}
+.contentClass1Ttitle a:hover{ color:#ff4a00;}
+.contentClass1Price{ display: block; width: 100%; line-height: 21px; font-size: 14px; color:#000;}
+.contentClass1Price del{ width: 100%; padding-left: 5px; font-size: 14px; color:#8C8C8C;}
+.contentClass1Pic{ width: 135px; height: 135px; text-align: center; float: right;}
+.contentClass1Desc{ display: block; font-size: 12px; color: #6d6d6d; }
+.Cstrength{ width: 289px; height: 290px; }
+.infoStrength{ width: 269px;}
+.PicStrength{ width: 289px; height: 220px; }
+.specialContent{ position: relative; height: 107px;}
+.specialTitle{ display: block; width: 155px; font-size: 18px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.specialPrice{ color: #f32f39;}
+.specialPic{ width: 100px; height: 100px;}
+.iconFlag{ display: block; width: 70px; height: 20px; line-height: 20px; text-align: center; color: #fff; background-color: #f32f39; position: absolute; top: 0; left: 30px; cursor: pointer;}
+#rechargeSection{ width: 250px; height: 254px; padding: 25px 30px 20px 30px; float: left; border-bottom: 1px solid #dfdfdf; }
+#rechargeTel{ width: 216px; height: 28px; outline: none; padding: 5px 15px 5px 15px; border: 1px solid #dfdfdf; font-size: 14px; line-height: 28px; color: #8C8C8C;}
+#dropMenu{ width: 216px; height: 28px; padding: 5px 15px 5px 15px; border: 1px solid #dfdfdf; font-size: 14px; line-height: 28px; color: #8C8C8C; margin:10px 0 0 0; position: relative; }
+.dropIcon{ width: 11px; height: 5px; background-image: url("images/icon-arrow-down.png"); position: absolute; right: 10px; top: 18px;}
+.dropIcon2{ background-image: url("images/icon-arrow-down.png"); background-position: 0 -5px;}
+.dropMenuUl{ width: 246px; display: none; border: 1px solid #dfdfdf; position: absolute; top: 0; left: 0; z-index: 10;}
+.dropMenuUl li{ width: 206px; height: 28px; padding: 5px 25px 5px 15px; font-size: 14px; background-color: #fff; line-height: 28px; color: #8C8C8C; cursor: pointer;}
+.dropMenuUl li:hover{ background-color:#F3F3F3;}
+#chargePrice{ width: 248px; height: 27px; margin: 15px 0; color: #6d6d6d;}
+.realPrice{ display: inline-block; font-size: 14px; }
+.priceNum{ display: inline-block; font-size: 18px;}
+#rechargeBtn{ width: 248px; height: 40px; font-size: 14px; box-shadow: none; cursor: default; background-color: #ff4a00; opacity: 0.65; color: #fff;}
+#newsSection{ width: 250px; height: 203px; padding: 25px 30px 20px 30px; float: left; border-bottom: 1px solid #dfdfdf;}
+.newsSectionUl{ width: 250px; display: block; float: left;}
+.newsSectionLi{ width: 248px; height: 46px; border-bottom: 1px solid #dfdfdf; line-height: 46px; display: list-item;}
+.newsSectionLi a:hover{ color: #ff4a00;}
+.spanL{  color: #333; font-size: 14px; float: left;}
+.spanR{  color: #333; font-size: 14px; float: right;}
+/******************新品上架 end ******************/
+/******************大家都喜欢 begin ******************/
+#homePeopleLoveContent{width: 1240px; height: 621px; border-top: 1px solid #dfdfdf; border-left: 1px solid #dfdfdf;}
+#hPLCLeft{ width:620px; height: 621px; float: left; }
+#hPLCCenter{ width:310px; height: 621px; float: left;}
+#hPLCRight{ width:310px; height: 621px; float: left;}
+#hPLCRight h3{ width: 247px; height: 36px; padding: 34px 30px 33px 30px; border-bottom: 1px solid #dfdfdf; border-right: 1px solid #dfdfdf; font-size: 24px; font-weight: 400; color: #000;}
+#hPLCRight h3 span{ margin-right: 5px; color: #FF4A00;}
+.boardList{ width: 308px; height: auto;}
+.top{ position: relative; width: 212px; height: 70px; padding: 16px 30px 16px 65px; border-bottom: 1px solid #DFDFDF;border-right: 1px solid #DFDFDF;}
+.boardInfo{float: left; width: 135px; padding: 15px 0 0; font-size: 14px;}
+.boardTitle{ display: block; width: 135px; line-height: 21px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.boardTitle a{ color:#000;}
+.boardTitle a:hover{ color:#ff4a00;}
+.boardPrice{ display: block; width: 100%; line-height: 21px; font-size: 14px; color:#000;}
+.boardPrice del{ width: 100%; padding-left: 5px; font-size: 14px; color:#8C8C8C;}
+.boardInfoPic{ width: 70px; height: 70px; text-align: center; float: right;}
+.boardNum{ width: 22px; height: 70px; position: absolute; left: 30px; top: 15px; font-size: 40px; line-height: 70px; color: #ff4a00; }
+.boardNum2{color: #6d6d6d;}
+/******************大家都喜欢 end ******************/
+/******************热评产品 begin ******************/
+#hotGoodsItemS{ width: 1240px; height: 411px;  border-top: 1px solid #dfdfdf; border-left: 1px solid #dfdfdf;}
+.hotGoodsItem{ width: 309px; height: 410px; float: left; border-bottom: 1px solid #dfdfdf; border-right: 1px solid #dfdfdf;}
+.itemContent{ width: 289px; height: 390px; padding: 4px; border: 6px solid #fff; -webkit-transition: border-color .5s; transition: border-color .5s;}
+.itemContent:hover{ border: 6px solid #efefef;}
+.hotItemInfo{ display: block; width: 249px; height: 64px; padding: 20px 20px 25px 20px; margin-bottom: 5px; text-align: left;}
+.hotItemTitle{ width: 249px;height: 21px; line-height: 21px; }
+.hotItemTitle a{ font-size: 14px; color: #333;}
+.hotItemTitle a:hover{ color: #ff4a00;}
+.hotItemMeta{ width: 249px; height: 18px; line-height: 18px; display: block;  height: 18px; font-size: 12px; color: #8C8C8C;}
+.iconstat5{ display: inline-block; width: 65px; height: 14px; position: relative; top: 2px; overflow: hidden; background-image: url("images/icon-stat.png"); background-repeat: no-repeat;}
+.sep{margin: 0 5px; color: #DFDFDF;}
+.hotItemPic{ display: block; width: 289px; height: 220px; text-align: center;}
+.hotItemComment{width: 259px;height: 36px;line-height: 18px;padding-bottom: 10px;padding-left: 15px;padding-right: 15px;padding-top: 10px;background-color: rgb(243, 243, 243);color: rgb(109, 109, 109);display: block; text-align: left;}
+/******************热评产品 end ******************/
+/******************特价产品 end ******************/
+#hSGItems{ width: 1240px; height: 310px;  border-top: 1px solid #dfdfdf; border-left: 1px solid #dfdfdf;}
+.tejiaContent{ position: relative;}
+.tejiaFlagIcon{position: absolute; top: 0; left: 216px;}
+/******************特价产品 end ******************/
+/******************多看图书 end ******************/
+.ItemAuthor{ display: block; font-size: 12px; color: #333;}
+.dukanTitle{ width: 249px; margin-left: -5px;}
+/******************多看图书 end ******************/
+/******************MIUI主题 begin ******************/
+#homeMiuiGoodsItems{ width: 1240px; height: 355px; border-top: 1px solid #dfdfdf; border-left: 1px solid #dfdfdf;}
+.miuiContent{ height: 335px}
+.miuiInfo{ width: 249px; height: 42px; padding: 20px 20px 25px 20px;}
+.miuiPic{ width: 289px; height: 220px; }
+.miuiPic img{width: 250px; height: 220px;}
+/******************MIUI主题 end ******************/
+/******************footer begin ******************/
+..container{ width: 1240px; margin: 0 auto;}
+.container:before, .container:after { display: table; content: ""; line-height: 0;}
+.footerService{ width: 1240px; height: 77px; padding: 40px 0; border-bottom: 1px solid #dfdfdf; margin: 0 auto;}
+.Serviceli{ width: 20%; float: left; text-align: center;}
+.Serviceli a{ display: block; font-size: 12px; color: #333; text-align: center;}
+.icon{display: block; width: 30px; height: 30px; background-image: url("images/service.png"); margin: 0 auto;}
+.icon1{background-position: -120px 0;}
+.icon1:hover{background-position: -120px -30px;}
+.icon2{background-position: 0 0;}
+.icon2:hover{background-position: 0 -30px;}
+.icon3{background-position: -30px 0;}
+.icon3:hover{background-position: -30px -30px;}
+.icon4{background-position: -60px 0;}
+.icon4:hover{background-position: -60px -30px;}
+.icon5{background-position: -90px 0;}
+.icon5:hover{background-position: -90px -30px;}
+.Serviceli strong{ display: block; margin-top: 5px; line-height: 27px; font-size: 18px; font-weight: 400; color: #000;}
+
+.footerLink{ width: 1240px; height: 118px; padding: 40px 0; border-bottom: 1px solid #dfdfdf; margin: 0 auto;}
+.linksUl{float: left; width: 165px; height: 118px; border-right: 1px solid #dfdfdf; margin-left: 30px;}
+.firstUl{ margin-left: 0;}
+.firstLi{ height: 27px; line-height: 27px;  margin-bottom: 10px; font-size: 18px; color: #000;}
+.normalLi{ display: block; height: 21px; line-height: 21px;  margin-bottom: 6px; }
+.normalLi a{ font-size: 14px; color: #6d6d6d}
+.normalLi a:hover{ color: #ff4a00;}
+.telContact{ width: 270px; height: 118px; float: left; }
+.telContact p{ color: #6d6d6d; font-size: 14px; text-align: center; margin-bottom: 15px;}
+.telContact .phone{ margin-bottom: 5px; font-size: 26px; line-height: 26px; color: #000;}
+.kefu{ display: block; width: 118px; height: 28px; line-height: 28px; text-align: center; font-size: 12px; color: #fff; background-color: #ff4a00; margin: 0 auto;}
+.kefu:hover{ background-color: #ee330a;}
+.footerInfo{ width: 1240px; height: 80px; padding: 35px 0 65px 0; margin: 0 auto; position: relative;}
+.infoText{ width: 710px; float: left; margin-bottom: 20px;}
+.infoText p{ line-height: 20px;}
+.infoText p a{ color: #333; }
+.infoText p a:hover{ color: #ff4a00; }
+.sep2{ margin: 0 3px;}
+
+.globalList{position: relative; float: right; width: 178px; height: 18px; font-size: 12px; color: #8c8c8c; padding: 10px; border: 1px solid #dfdfdf; background-color: #fff; }
+.globalListUl{position: absolute; left: -1px; top: -267px; display: none; width: 198px; height: auto; border: 1px solid #dfdfdf; border-bottom: 0;  }
+.globalListUl li{ width: 177px; height: 18px; line-height: 18px;  padding: 10px; background-color: #fff;}
+.globalListUl li a{ font-size: 12px; color: #8c8c8c; }
+.infoLinks{ width: 1000px; height: 20px; clear: both; position: absolute; top: 95px; left: 0px;}
+.infoLinks a{display: block; width: 54px; height: 20px; float: left;}
+ .infoLinks a img{ width: 54px; height: 20px; }
+/******************footer begin ******************/
