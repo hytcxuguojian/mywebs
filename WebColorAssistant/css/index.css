@@ -1,0 +1,56 @@
+*{margin: 0; padding: 0;}
+body{ width: 100%; height: 100%; position: absolute; overflow: hidden; text-align: left; color: #000; font-size: 14px; font-family:'微软雅黑',Arial,Helvetica,sans-serif;}
+img{ border: 0px; }
+a{ text-decoration: none; cursor: pointer;}
+ul,li{ list-style: none; list-style-position: outside; }
+
+/******************主要框架begin******************/
+#panel{ position: absolute; top: 0; bottom: 0; left: 0; width: 220px; height: 100%; background: #111; color: #fff; text-shadow: 0 1px 2px #000;}
+#wrapper{ overflow: auto; overflow-x: hidden; margin-left: 220px; height: 100%; }
+/***************panel*******************/
+#header{ text-align: center;}
+#header h1 { margin: .5em; font-size: 18px;}
+#header h1 span { display: block; font-size: 40px; }
+#author{ color: #999; font-style: italic;}
+#author a{ color: #999;}
+#nav{ position: absolute; top: 140px; right: 10px; bottom: 10px; left: 10px; overflow: auto; background: #222;}
+#nav h4{ margin: .4em 1em 0; padding: .4em 0; border-bottom: 1px solid #333; color: #aaa;}
+#nav a{ margin: 0 .4em; display: block; padding: .4em .6em; color: #f7f7f7; text-decoration: none;}
+#nav a:hover{ background-color: #000;}
+
+/***************colorTool*******************/
+#colorTool{ width: 700px; height: 170px; border: 5px solid #dfdfdf; margin: 50px auto 0 auto; transition:all,2s; -webkit-transition:all,2s;  -moz-transition:all,2s;}
+#colorTool:hover{ border-color: #cccc99;}
+.controlArea{ width: 450px; height: 150px; float: left; padding: 10px;}
+.ColorValSpan{ height: 30px; line-height: 30px; font-size: 22px; color: #333;}
+#ColorVal{ margin-left: 5px; padding-left: 10px; width: 200px; height: 30px; line-height: 30px; border:none; font-size: 22px; color: #ff4a00;}
+#ColorRGB{ width: 100%; height: 105px; background-color: #CCCC99; margin-top: 10px;}
+.colorR,.colorG,.colorB{ width: 100%; height: 30px; margin-bottom: 5px; position: relative;}
+.ColorRSpan,.ColorGSpan,.ColorBSpan{ height: 30px; line-height: 30px; font-size: 22px; color: #333; position: relative;}
+.ColorRVal,.ColorGVal,.ColorBVal{ position: absolute; top: 2px; left: 30px;  text-align: center; width: 100px; height: 26px; line-height: 26px; border:none; font-size: 20px; color: #ff4a00;}
+.ColorRProgress,.ColorGProgress,.ColorBProgress{ width: 265px; height: 18px; position: absolute; left: 150px; top: 6px;}
+.pro{ position: absolute; left: 0; height: 100%; width: 100%; background: url("images/pro.png") repeat-x 0 50%;}
+.dian{ display: block; width: 10px; height: 18px; position: absolute; top: 0; left: 0; background: url("images/T1bMh.FxNXXXb_r3IF-72-730.png") no-repeat -32px -338px; cursor: pointer;}
+
+.displayArea{ width: 179px; height: 150px; padding: 10px 20px; border-left: 1px solid #dfdfdf; float: left;}
+.showColor{ width: 150px; height:90px; display: block; margin-left: 20px;}
+.showColorVal,.showColorRGBVal{ display:block; background:#fff; font-family:"Lucida Console","Lucida Sans Typewriter",Monaco,"Bitstream Vera Sans Mono",monospace; border: none 0; font-size:18px; width:100%; height: 25px; line-height: 25px; margin-top: 5px; text-align:center}
+
+/***************main*******************/
+#main{ width: 640px; margin: 0 auto;}
+.section { overflow: hidden; margin: 5em 0; clear: both;}
+#main h2{ display: inline-block; margin-bottom: 1em; padding: .2em .4em; border-bottom: 3px solid #CCF; background: #000; color: #fff;}
+.discription{ display: block; margin-bottom: 1em;}
+#main h3{ display: block; font-size: 1.17em; margin-bottom: 1em; padding: .2em .4em; border-bottom: 3px solid #CCF; background: #000; color: #fff;}
+.subsection{ overflow:hidden; margin-bottom:3em; clear: both;}
+.groups{ clear: both;}
+.group { float:left; margin:0 7px; width:198px; height:85px;}
+.group span { float:left; margin:1px; width:60px; height:60px; text-align:center;}
+.group input { display:block; margin-top:64px; background:#fff; font-family:"Lucida Console","Lucida Sans Typewriter",Monaco,"Bitstream Vera Sans Mono",monospace; border: none 0; font-size:14px; width:100%; text-align:center}
+
+
+::-webkit-scrollbar {width:10px}
+::-webkit-scrollbar-track {background:rgba(0,0,0,.1)}
+::-webkit-scrollbar-thumb {background:rgba(0,0,0,.3)}
+#nav::-webkit-scrollbar-track {background:rgba(255,255,255,.1)}
+#nav::-webkit-scrollbar-thumb {background:rgba(255,255,255,.3)}

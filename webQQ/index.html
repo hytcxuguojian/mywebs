@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>smartQQ</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="网页QQ">
+	<meta name="description" content="网页版QQ">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div id="bgImage">
+		<img src="css/images/1.jpg" picIndex="1">
+		<img src="css/images/2.jpg" picIndex="2">
+		<img src="css/images/3.jpg" picIndex="3">
+		<img src="css/images/4.jpg" picIndex="4">
+		<img src="css/images/5.jpg" picIndex="5">
+		<img src="css/images/6.jpg" picIndex="6">
+		<img src="css/images/7.jpg" picIndex="7">
+		<img src="css/images/8.jpg" picIndex="8">
+		<img src="css/images/9.jpg" picIndex="9">
+		<img src="css/images/10.jpg" picIndex="10">
+	</div>
+	<div id="wrap">
+		<div id="mainContainer">
+			<div class="accountHeader">
+				<div class="avatarWrap">
+					<img src="css/images/userpic.jpg">
+					<span class="userState"></span>
+				</div>
+				<span class="userNick">子胥吾有</span>
+				<span class="userQianming">▄︻┻┳═━    ⊕</span>
+				<div class="iconslist">
+			    	<a href="http://qzone.qq.com" class="i_qzone" target="_blank" title="QQ空间">QQ空间</a>
+			    	<a href="http://mail.qq.com" class="i_mail" target="_blank" title="QQ邮箱">QQ邮箱</a>
+			    	<a href="http://t.qq.com" class="i_weibo" target="_blank" title="腾讯微博">腾讯微博</a>
+			    	<a href="http://v.qq.com" class="i_video" target="_blank" title="腾讯视频">腾讯视频</a>
+			    	<a href="http://www.qq.com" class="i_qqwebsite" target="_blank" title="腾讯网">腾讯网</a>
+			    	<a href="http://y.qq.com" class="i_music" target="_blank" title="QQ音乐">QQ音乐</a>
+			    	<a href="http://wallet.tenpay.com/web/" class="i_wallet" target="_blank" title="QQ钱包">QQ钱包</a>
+			    	<a href="http://www.pengyou.com" class="i_pengyou" target="_blank" title="朋友网">朋友网</a>
+			    	<a href="http://www.weiyun.com" class="i_weiyun" target="_blank" title="微云">微云</a>
+			    </div>
+			</div>
+			<div class="mainPanel">
+				<div class="panelContainer">
+					<div class="panel active" id="sessionP">
+						<div class="panelHeader">
+							<h1 class="panelTitle">会话</h1>
+						</div>
+						<div class="panelbodyContainer">
+							<div class="panelbody">
+								<div class="scrollArea">
+									<ul id="huihualist">
+										<!-- <li id="huihua-friend-4207808060" belongTo="friend-4207808060" class="listItem">
+											<a href="" class="avatar"><img src="css/images/g (7).jpg"></a>
+											<p class="member_nick">
+												<b>雷星</b>
+												<span>(放羊的星星)</span>
+											</p>
+											<p class="member_msg text_ellipsis"></p>
+											<span class="delete" title="删除当前会话"></span>
+										</li> -->
+										<!-- <li class="listItem">
+											<a href="" class="avatar"><img src="css/images/g (1).jpg">
+												<span class="avatarflag"></span>
+											</a>
+											<p class="member_nick">老爸<span>(幸福的我)</span></p>
+											<p class="member_msg text_ellipsis">什么时候回家啊</p>
+										</li>
+										<li class="listItem">
+											<a href="" class="avatar"><img src="css/images/getface.jpg"><span class="avatarflag noRead"></span></a>
+											<p class="member_nick"> C# ASP.NET WEB JQuer</p>
+											<p class="member_msg text_ellipsis">你们都在啊？</p>
+										</li>
+										<li class="listItem">
+											<a href="" class="avatar"><img src="css/images/getface.jpg">
+												<span class="avatarflag"></span>
+											</a>
+											<p class="member_nick">软件设计师</p>
+											<p class="member_msg text_ellipsis">大家资料看的怎么样了啊？</p>
+										</li>
+										<li class="listItem">
+											<a href="" class="avatar"><img src="css/images/getface.jpg">
+												<span class="avatarflag noRead"></span>
+											</a>
+											<p class="member_nick">古泉社</p>
+											<p class="member_msg text_ellipsis">谁有咸丰当千大钱，拿来瞅瞅。</p>
+										</li> -->
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel" id="contactP">
+						<div class="panelHeader">
+							<h1 class="panelTitle">联系人</h1>
+						</div>
+						<div class="panelbodyContainer">
+							<div class="panelbody">
+								<div class="contactList">
+									<ul id="menberTab">
+										<li class="menberTabLi menberTabLiA" param="friend">好友</li>
+										<li class="menberTabLi" param="group">群</li>
+										<li class="menberTabLi" param="discuss">讨论组</li>
+									</ul>
+									<ul id="menberTabBody">
+										<li id="menberTabBody-friend" class="menberTabBodyLi active">
+											<ul id="friendGroupList">
+												<li class="listGroup">
+													<div id="groupTitle0" class="listGroupTitle">
+														<span class="listGroupTitlenName">我的好友</span>
+														<span class="onlinePercent">8/15</span>
+													</div>
+													<ul id="groupBody0" class="listGroupBody">
+														<li id="friend-4207808060" class="listItem" newPanel="false">
+															<a href="" class="avatar"><img src="css/images/g (7).jpg"></a>
+															<p class="member_nick">
+																<b>雷星</b>
+																<span>(放羊的星星)</span>
+															</p>
+															<p class="member_msg text_ellipsis">
+															    <span class="member_state">[在线]</span>
+															    <span class="member_signature">Don't try so hard, the best things come when you least expect them to.</span>
+															</p>
+														</li>
+														<li id="friend-4233687562" class="listItem" newPanel="false">
+															<a href="" class="avatar"><img src="css/images/getface (2).jpg"></a>
+															<p class="member_nick"><b>于意</b>
+																<span>(全心、全意)</span>
+															</p>
+															<p class="member_msg text_ellipsis">
+															    <span class="member_state">[在线]</span>
+															    <span class="member_signature">一直都在。</span>
+															</p>
+														</li>
+														<li id="friend-1152091742" class="listItem" newPanel="false">
+															<a href="" class="avatar"><img src="css/images/getface (1).jpg"></a>
+															<p class="member_nick">
+																<b>许千猛</b>
+																<span>(许千猛)</span>
+															</p>
+															<p class="member_msg text_ellipsis">
+															    <span class="member_state">[在线]</span>
+															    <span class="member_signature">你怎么看。</span>
+															</p>
+														</li>
+														<li id="friend-1989071971" class="listItem" newPanel="false">
+															<a href="" class="avatar"><img src="css/images/g (8).jpg"></a>
+															<p class="member_nick">
+																<b>徐强</b>
+																<span>(意外之外)</span>
+															</p>
+															<p class="member_msg text_ellipsis">
+															    <span class="member_state">[离线]</span>
+															    <span class="member_signature">我这个人很讲原则，说到底就是自己爽不爽。</span>
+															</p>
+														</li>
+													</ul>
+												</li>
+												<li class="listGroup">
+													<div id="groupTitle0" class="listGroupTitle">
+														<span class="listGroupTitlenName">IT企业工作者</span>
+														<span class="onlinePercent">0/4</span>
+													</div>
+													<ul id="groupBody0" class="listGroupBody">
+														<li id="friend-1731519956" class="listItem" newPanel="false">
+															<a href="" class="avatar"><img src="css/images/daiweixia.png"></a>
+															<p class="member_nick">
+																<b>戴伟霞</b>
+																<span>(爬树de鱼)</span>
+															</p>
+															<p class="member_msg text_ellipsis">
+															    <span class="member_state">[离线]</span>
+															    <span class="member_signature">Thank now owned and perception, try to prove, not to explain</span>
+															</p>
+														</li>
+														<li id="friend-26646230" class="listItem" newPanel="false">
+															<a href="" class="avatar"><img src="css/images/zhouzhou.jpg"></a>
+															<p class="member_nick">
+																<b>周洲</b>
+																<span>(小黑)</span>
+															</p>
+															<p class="member_msg text_ellipsis">
+															    <span class="member_state">[离线]</span>
+															    <span class="member_signature">我要练出八块腹肌。</span>
+															</p>
+														</li>
+														<li id="friend-3446010130" class="listItem" newPanel="false">
+															<a href="" class="avatar"><img src="css/images/zhangfeng.jpg"></a>
+															<p class="member_nick">
+																<b>张峰</b>
+																<span>(小峰哥)</span>
+															</p>
+															<p class="member_msg text_ellipsis">
+															    <span class="member_state">[离线]</span>
+															    <span class="member_signature">从小不学好，长大修电脑。</span>
+															</p>
+														</li>
+														<li id="friend-1164019789" class="listItem" newPanel="false">
+															<a href="" class="avatar"><img src="css/images/luanminwen.jpg"></a>
+															<p class="member_nick">
+																<b>栾敏文</b>
+																<span>(开心生活)</span>
+															</p>
+															<p class="member_msg text_ellipsis">
+															    <span class="member_state">[离线]</span>
+															    <span class="member_signature">海纳百川，有容乃大。</span>
+															</p>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li id="menberTabBody-group" class="menberTabBodyLi">
+											<ul id="groupGroupList">
+												<li class="listItem" id="group-42078080" newPanel="false">
+													<a href="" class="avatar"><img src="css/images/getface.jpg"><span class="avatarflag noRead"></span></a>
+													<p class="member_nick"> 
+														<b>C# ASP.NET WEB JQuer</b>
+														<span></span>
+													</p>
+												</li>
+												<li class="listItem" id="group-57435453" newPanel="false">
+													<a href="" class="avatar"><img src="css/images/getface.jpg"><span class="avatarflag"></span></a>
+													<p class="member_nick">
+														<b>软件设计师</b>
+														<span></span>
+													</p>
+												</li>
+												<li class="listItem" id="group-46545593" newPanel="false">
+													<a href="" class="avatar"><img src="css/images/getface.jpg"><span class="avatarflag noRead"></span></a>
+													<p class="member_nick">
+														<b>古泉社</b>
+														<span></span>
+													</p>
+												</li>
+											</ul>
+										</li>
+										<li id="menberTabBody-discuss" class="menberTabBodyLi">
+											<ul id="discussGroupList">
+												
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel" id="pluginP">
+						<div class="panelHeader">
+							<h1 class="panelTitle">发现</h1>
+						</div>
+						<div class="panelbodyContainer">
+							<div class="panelbody">
+								<div class="scrollArea">
+									<ul id="plugin_list">
+										<li id="qzone">
+											<span class="listicon"></span>
+											<a href="">QQ空间</a>
+										</li>
+										<li id="qmail">
+											<span class="listicon"></span>
+											<a href="">QQ邮箱</a>
+										</li>
+										<li id="qq_portal">
+											<span class="listicon"></span>
+											<a href="">易迅网</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel" id="settingP">
+						<div class="panelHeader">
+							<h1 class="panelTitle">设置</h1>
+						</div>
+						<div class="panelbodyContainer">
+							<div class="panelbody">
+								<div class="scrollArea">
+									<div class="settingSection">
+										<div class="group">
+											<div class="row firstrow">
+												<div class="userHeadimage"><img src="css/images/userpic.jpg"></div>
+												<div class="userInfo">
+													<span class="username text_ellipsis">子胥吾有</span>
+													<span class="userID text_ellipsis">1075737942</span>
+												</div>
+												<div class="state">
+													<i id="onlineState" class="onlineStateSet"></i>
+													<i class="dropDown" isopen="0"></i>
+													<ul class="onlineStateSetUl">
+										                <li><i class="online_icon"></i>在线</li>
+										                <li><i class="callme_icon"></i>Q我</li>
+										                <li><i class="away_icon"></i>离开</li>
+										                <li><i class="busy_icon"></i>忙碌</li>
+										                <li><i class="silent_icon"></i>静音</li>
+										                <li><i class="hidden_icon"></i>隐身</li>
+										                <li><i class="offline_icon"></i>离线</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="group">
+											<div class="row gexingqianming">
+												<span class="label">个性签名: </span>
+												<span>▄︻┻┳═━    ⊕</span>
+											</div>
+										</div>
+										<div class="group">
+											<div class="row messageSet">消息相关设置
+												<span class="more_icon"></span>
+											</div>
+										</div>
+										<div class="group">
+											<div class="row aboutQQ" isopen="0">关于QQ
+												<span class="more_icon"></span>
+											</div>
+										</div>
+										<div class="group" id="aboutQQInfo" style="display:none;">
+											<div class="row QQinfo">
+												<span class="label">当前版本 </span>
+												<span>V1.0</span>
+											</div>
+											<div class="row service">
+												服务条款
+											</div>
+											<div class="row help">帮助与反馈
+												<span class="more_icon"></span>
+											</div>
+										</div>
+										<div class="group">
+											<div class="row exit">退出当前账号
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer" >
+					<nav id="navTab">
+						<ul class="navTHead">
+							<li id="session" class="Selected">
+								<a href="#">
+									<div class="icon newicon"></div>
+									<span>会话</span>
+								</a>
+							</li>
+							<li id="contact">
+								<a href="#">
+									<div class="icon"></div>
+									<span>联系人</span>
+								</a>
+							</li>
+							<li id="plugin">
+								<a href="#">
+									<div class="icon"></div>
+									<span>发现</span>
+								</a>
+							</li>
+							<li id="setting">
+								<a href="#">
+									<div class="icon"></div>
+									<span>设置</span>
+								</a>
+							</li>
+						</ul>
+						<div class="changeBg">
+							<a href="##" class="change changeBgFre" title="点击切换背景图片"></a>
+							<a href="##" class="change changeBgNext" title="点击切换背景图片"></a>
+						</div>
+						<div class="suggestion">
+							<a href="#">意见反馈</a>
+						</div>
+					</nav>
+				</footer>
+			</div>
+		</div>
+		<div id="rightContainer">
+			<div id="rightPanel">
+				<div id="messageSetP">
+					<div class="panelHeader">
+						<div class="leftbtn"></div>
+						<span class="messageSetPTitle">消息相关设置</span>
+					</div>
+					<div class="messageSetPbody">
+						<div class="group">
+							<div class="row voice">
+								<span class="label">声音</span>
+								<div id="voiceCheck" class="checkbox checked">
+									<span class="spanChecked"></span>
+								</div>
+							</div>
+							<div class="row messageForm">
+								<span class="label">悬浮窗</span>
+								<div id="messageFormCheck" class="checkbox checked">
+									<span class="spanChecked"></span>
+								</div>
+							</div>
+						</div>
+						<div class="group">
+							<div class="row http">
+								<span class="label">HTTPS</span>
+								<div id="HTTPSCheck" class="checkbox">
+									<span></span>
+								</div>
+								<br>
+								<span class="label">使用 HTTPS 加密聊天内容</span>
+							</div>
+						</div>
+						<div class="group">
+							<div class="row sendmessage">
+								<span class="label">按Ctrl+Enter键发送消息</span>
+								<div id="sendmessageCheck" class="checkbox">
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

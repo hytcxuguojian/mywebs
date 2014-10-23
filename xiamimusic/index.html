@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>虾米音乐</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="虾米音乐">
+	<meta name="description" content="虾米音乐">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/canvas.js"></script>
+	<script type="text/javascript" src="js/mousewheel.js"></script>
+	<script type="text/javascript" src="js/scroll.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div id="blurBackground">
+		<canvas id="mycanvas" width="1366" height="700"></canvas>
+	</div>
+	<div id="player-main">
+		<div id="Top">
+			<div id="head">
+				<div class="logo">
+					<h1><a target="_blank"></a></h1>
+				</div>
+				<div class="searchBar">
+					<div class="searchIconContainer">
+						<span class="searchIcon"></span>
+					</div>
+					<input id="searchInput" type="text">
+				</div>
+				<div class="mainNav">
+					<div class="tipLogin">
+						马上
+						<a href="#" class="loginA">登录</a>
+					</div>
+					<a href="#" class="myroom"></a>
+				</div>
+			</div>
+		</div>
+		<div id="middle">
+			<div class="main-wrap">
+				<div class="main-sidebar">
+					<div class="menu-outer">
+						<ul id="J_sidebarMenu">
+							<li class="menuLi cur">
+								<a href="#">
+									<i class="icon iplay"></i>
+									正在播放
+								</a>
+							</li>
+							<li class="menuLi">
+								<a href="#">
+									<i class="icon ihst"></i>
+									播放历史
+								</a>
+							</li>
+							<li class="menuLi">
+								<a href="#">
+									<i class="icon ishouc"></i>
+									我收藏的单曲
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="collectOut">
+						<span class="colS">我创建的精选集</span>
+						<a href="#" class="colA"></a>
+					</div>
+					<div class="cellectList"></div>
+					
+				</div>
+				<div class="mainbody">
+					<div class="playList">
+						<ul class="playListhead">
+							<li class="playListheadli c1">歌曲
+								<span>(10)</span>
+							</li>
+							<li class="playListheadli c2">演唱者
+							</li>
+							<li class="playListheadli c3">专辑
+							</li>
+						</ul>
+						<ul class="playListContent">	
+							<li class="playListContentli active" id="music1" musicUrl="musics/盛夏光年.mp3" bgCanvas="images/1.jpg">
+								<div class="playListItem">
+									<div class="playListCheckbox">
+										<div class="checkIn" type="checkbox" select="0"></div>
+									</div>
+									<div class="songSort">
+										<i class="playIcon"></i>
+										<em sonN="1">1</em>
+									</div>
+									<div class="songInfo">
+										<div class="songItem c1"><span class="songName" title="盛夏光年">盛夏光年</span></div>
+										<div class="songItem c2"><a class="songer" href="">陈冰</a></div>
+										<div class="songItem c3"><a class="album" href="">好声音第三季</a></div>
+									</div>
+									<div class="control">
+										<a class="cicon love" title="收藏"></a>
+										<a class="cicon more" title="更多"></a>
+										<a class="cicon dele" title="删除"></a>
+									</div>
+								</div>
+								<div class="manyou">
+									<a href="">漫游相似歌曲</a>
+								</div>
+							</li>
+							<li class="playListContentli" id="music2" musicUrl="musics/Chris Medina - What Are Words.mp3" bgCanvas="images/4.jpg">
+								<div class="playListItem">
+									<div class="playListCheckbox">
+										<div class="checkIn" type="checkbox" select="0"></div>
+									</div>
+									<div class="songSort" >
+										<i class="playIcon"></i>
+										<em sonN="2">2</em>
+									</div>
+									<div class="songInfo">
+										<div class="songItem c1"><span class="songName" title="What Are Words">What Are Words</span></div>
+										<div class="songItem c2"><a class="songer" href="">Chris Medina</a></div>
+										<div class="songItem c3"><a class="album" href="">Single</a></div>
+									</div>
+									<div class="control">
+										<a class="cicon love" title="收藏"></a>
+										<a class="cicon more" title="更多"></a>
+										<a class="cicon dele" title="删除"></a>
+									</div>
+								</div>
+								<div class="manyou">
+									<a href="">漫游相似歌曲</a>
+								</div>
+							</li>
+							<li class="playListContentli" id="music3" musicUrl="musics/漂洋过海来看你.mp3" bgCanvas="images/2.jpg">
+								<div class="playListItem">
+									<div class="playListCheckbox">
+										<div class="checkIn" type="checkbox" select="0"></div>
+									</div>
+									<div class="songSort" >
+										<i class="playIcon"></i>
+										<em sonN="3">3</em>
+									</div>
+									<div class="songInfo">
+										<div class="songItem c1"><span class="songName" title="漂洋过海来看你">漂洋过海来看你</span></div>
+										<div class="songItem c2"><a class="songer" href="">刘明湘</a></div>
+										<div class="songItem c3"><a class="album" href="">好声音第三季</a></div>
+									</div>
+									<div class="control">
+										<a class="cicon love" title="收藏"></a>
+										<a class="cicon more" title="更多"></a>
+										<a class="cicon dele" title="删除"></a>
+									</div>
+								</div>
+								<div class="manyou">
+									<a href="">漫游相似歌曲</a>
+								</div>
+							</li>
+							<li class="playListContentli" id="music4" musicUrl="musics/斑马, 斑马-宋冬野.mp3" bgCanvas="images/3.jpg">
+								<div class="playListItem">
+									<div class="playListCheckbox">
+										<div class="checkIn" type="checkbox" select="0"></div>
+									</div>
+									<div class="songSort" >
+										<i class="playIcon"></i>
+										<em sonN="4">4</em>
+									</div>
+									<div class="songInfo">
+										<div class="songItem c1"><span class="songName" title="斑马，斑马">斑马，斑马</span></div>
+										<div class="songItem c2"><a class="songer" href="">宋冬野</a></div>
+										<div class="songItem c3"><a class="album" href="">安河桥北</a></div>
+									</div>
+									<div class="control">
+										<a class="cicon love" title="收藏"></a>
+										<a class="cicon more" title="更多"></a>
+										<a class="cicon dele" title="删除"></a>
+									</div>
+								</div>
+								<div class="manyou">
+									<a href="">漫游相似歌曲</a>
+								</div>
+							</li>
+							<li class="playListContentli" id="music5" musicUrl="musics/神秘园之歌.mp3" bgCanvas="images/5.jpg">
+								<div class="playListItem">
+									<div class="playListCheckbox">
+										<div class="checkIn" type="checkbox" select="0"></div>
+									</div>
+									<div class="songSort" >
+										<i class="playIcon"></i>
+										<em sonN="5">5</em>
+									</div>
+									<div class="songInfo">
+										<div class="songItem c1"><span class="songName" title="神秘园之歌">神秘园之歌</span></div>
+										<div class="songItem c2"><a class="songer" href="">纯音乐</a></div>
+										<div class="songItem c3"><a class="album" href="">背景音乐之旅</a></div>
+									</div>
+									<div class="control">
+										<a class="cicon love" title="收藏"></a>
+										<a class="cicon more" title="更多"></a>
+										<a class="cicon dele" title="删除"></a>
+									</div>
+								</div>
+								<div class="manyou">
+									<a href="">漫游相似歌曲</a>
+								</div>
+							</li>
+							<li class="playListContentli" id="music6" musicUrl="musics/雪之梦 班得瑞.mp3" bgCanvas="images/6.jpg">
+								<div class="playListItem">
+									<div class="playListCheckbox">
+										<div class="checkIn" type="checkbox" select="0"></div>
+									</div>
+									<div class="songSort" >
+										<i class="playIcon"></i>
+										<em sonN="6">6</em>
+									</div>
+									<div class="songInfo">
+										<div class="songItem c1"><span class="songName" title="神秘园之歌">雪之梦</span></div>
+										<div class="songItem c2"><a class="songer" href="">纯音乐</a></div>
+										<div class="songItem c3"><a class="album" href="">床头抒情纯音乐</a></div>
+									</div>
+									<div class="control">
+										<a class="cicon love" title="收藏"></a>
+										<a class="cicon more" title="更多"></a>
+										<a class="cicon dele" title="删除"></a>
+									</div>
+								</div>
+								<div class="manyou">
+									<a href="">漫游相似歌曲</a>
+								</div>
+							</li>
+						</ul>
+						<div class="playFt">
+							<div class="track">
+								<div class="uiCheck">
+									<div class="checkAll" type="checkbox" select="0"></div>
+								</div>
+								<div class="uiItem">
+									<a href="#" class="itIcon itDele">删除</a>
+								</div>
+								<div class="uiItem">
+									<a href="#" class="itIcon itShou">收藏</a>
+								</div>
+								<div class="uiItem">
+									<a href="#" class="itIcon itJin">添加到精选集</a>
+								</div>
+								<div class="uiItem">
+									<a href="#" class="itIcon itMore">更多</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-outher">
+					<div class="playerCover">
+						<a href="" title="" >
+							<img id="bgcanvas" src="images/2.jpg">
+						</a>
+					</div>
+					<!-- <div class="albumSale">
+						<a href="#" class="asA"></a>
+					</div> -->
+					<div class="playerLrc">
+						<ul class="lrcUl">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bottom">
+			<audio id="myaudio" src="musics/盛夏光年.mp3" loop="loop"></audio>
+			<div class="playerWrap">
+				<div class="playerCon">
+					<a href="#" class="pbtn prevBtn"></a>
+					<a href="#" class="pbtn playBtn" isplay="0"></a>
+					<a href="#" class="pbtn nextBtn"></a>
+					<a href="#" class="mode"></a>
+				</div>
+				<div class="playInfo">
+					<div class="trackInfo">
+						<a href="#" class="songName">盛夏光年(Live)-</a>
+						<a href="#" class="songPlayer">陈冰</a>
+						<div class="trackCon">
+							<a href="#" class="tc1" title="收藏"></a>
+							<a href="#" class="tc2"  title="分享"></a>
+							<a href="#" class="tc3"  title="更多"></a>
+						</div>
+					</div>
+					<div class="playerLength">
+						<div class="position">00:00</div>
+						<div class="progress">
+							<div class="pro1">
+								<div class="playposition"></div>
+							</div>
+							<div class="pro2">
+								<a href="#" class="dian"></a>
+							</div> 
+						</div>
+						<div class="duration">00:00</div>
+					</div>
+				</div>
+				<div class="vol">
+					<a href="#" class="pinBtn"></a>
+					<div class="volm">
+						<div class="volSpeaker"></div>
+						<div class="volControl">
+							<div class="volposition"></div>
+							<a href="#" class="dian2"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

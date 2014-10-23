@@ -1,0 +1,219 @@
+*{margin: 0; padding: 0;}
+body{ background: url("image/fullbody.png"); width: 100%; height: 100%; position: absolute; overflow: hidden; text-align: left; font-size: 16px; font-family:'微软雅黑','Helvetica Neue',Helvetica,Arial,sans-serif;}
+img{ border: 0px; }
+a{ text-decoration: none;}
+ul,li{ list-style: none; list-style-position: outside; }
+
+
+/******************主要框架begin******************/
+#wrap{ width: 1000px; height: 100%; margin: 0 auto;}
+#mainContainer{ width: 280px; height: 100%; display: block; float: left; position: relative;}
+#rightContainer{ width: 700px; height: 100%; margin-left: 20px; display: block; float: left; position: relative;}
+/******************主要框架 end *****************/
+/*换肤*/
+#bgImage{ position: absolute; width:100%; height: 100%; overflow: hidden;}
+#bgImage img{ width: 100%; height: 100%;}
+/**************顶端账户信息begin****************/
+.accountHeader{ width: 100%; display: block;}
+.avatarWrap{ width: 40px; height: 40px; left: 20px; top: 2px; position: absolute; border: 3px solid #fff; box-shadow: 1px 1px 5px #000; -webkit-box-shadow: 1px 1px 5px #000; -moz-box-shadow: 1px 1px 5px #000;}
+.userState{ width: 10px; height: 10px; position: absolute; right: 0; bottom: 0; background-image: url("images/state_sprite.gif");}
+.userNick{height: 22px; width: 148px; margin-left: 77px; top: 0px; font-size: 16px; position: absolute; text-shadow: 0 0 3px snow,0 0 3px snow,0 0 3px snow,0 0 3px snow; overflow: hidden; }
+.userQianming{ height: 22px; width: 148px; margin-left: 77px; top: 25px; font-size: 16px; position: absolute; text-shadow: 0 0 3px snow,0 0 3px snow,0 0 3px snow,0 0 3px snow; overflow: hidden;}
+.iconslist{ position: absolute; left: 20px; top: 55px; width: }
+.iconslist a{ text-indent: -9999px; float: left; margin-right: 8px; width: 15px; height: 15px; background-image: url("images/icons_list.png"); background-repeat: no-repeat;}
+.i_qzone{ background-position: 0 0;}
+.i_mail{ background-position: -20px 0;}
+.i_weibo{ background-position: -40px 0;}
+.i_video{ background-position: -60px 0;}
+.i_qqwebsite{ background-position: -82px 0;}
+.i_music{ background-position: -103px 0;}
+.i_wallet{ background-position: -125px 0;}
+.i_pengyou{ background-position: -145px 0;}
+.i_weiyun{ background-position: -167px 0;}
+/**************顶端账户信息end****************/
+
+/*会话区*/
+.mainPanel{ position: relative; height: 80%; top: 12%; display: block; width: 280px; background-color: #fff; border-radius: 7px; -webkit-box-shadow: 2px 2px 6px rgba(0,0,0,.7); -moz-box-shadow: 2px 2px 6px rgba(0,0,0,.7); box-shadow: 2px 2px 6px rgba(0,0,0,.7); }
+.panelContainer{ position: absolute; left: 0; top: 0px; bottom: 50px; width: 100%; height: auto;}
+.footer{ width: 100%; height: 50px; background: linear-gradient(#555,#222); position: absolute; left: 0; bottom: 0; border-radius: 0 0 6px 6px; -webkit-border-radius: 0 0 6px 6px; -moz-border-radius: 0 0 6px 6px;}
+.panel{ width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: none;}
+.panelHeader{display: block; position: relative; z-index: 20; height: 45px; width: 100%; background: linear-gradient(#555,#222); background: -webkit-gradient(linear,left top,left bottom,from(#555),to(#222)); background: -webkit-linear-gradient(#555,#222); border-radius: 6px 6px 0 0; }
+.panelTitle{ padding: .75em .45em; font-weight: 400; font-size: 18px; line-height: 100%; text-align: center; color: #fff;}
+.panelbodyContainer{ position: absolute; top: 45px; left: 0; bottom: 0; width: 100%;}
+.panelbody{ width: 100%; min-height: 100%; position: relative;}
+.scrollArea{ display: block; width: 100%; position: absolute; left: 0; top:0; bottom: 0; overflow: auto; }
+.scrollArea ul{ width: 100%; overflow: hidden;}
+.chatlist{ position: relative; width: 278px; height: 56px; background: #f1f1f1; background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#f1f1f1)); background: -webkit-linear-gradient(white,#f1f1f1); background: -moz-linear-gradient(white,#f1f1f1); background: -ms-linear-gradient(white,#f1f1f1); background: -o-linear-gradient(white,#f1f1f1); background: linear-gradient(#fff,#f1f1f1); border-top: 1px solid #e3e3e3; padding: 3px 1px 3px 1px; cursor: pointer;}
+.avatar{ width: 40px; height: 40px; float: left; position: relative; margin: 8px;}
+.avatarflag{ width: 18px; height: 18px; position: absolute; right: -8px; top: -8px; background-image: url("images/systemmsg_unread.png"); display: none;}
+.noRead{ display: block;}
+.member_nick{ height: 22px; line-height: 23px; overflow: hidden; padding: 6px 0 0 5px; padding-right: 5px!important;}
+.member_nick b{ font-weight: normal;}
+.member_nick span { color: #aaa; line-height: 17px; font-size: 12px; }
+.member_msg{ overflow: hidden; font-size: 14px; color: #aaa; line-height: 28px; padding-left: 5px;}
+.member_msg img{ width: 20px; height: 20px; vertical-align: middle;}
+.text_ellipsis { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.delete{ display: none; width: 30px; height: 30px; position: absolute; top: 13px; right: 15px; background-image: url("images/delete.png"); background-size: 30px 30px;}
+
+/*联系人区*/
+.contactList{ display: block; width: 100%; position: absolute; left: 0; top:0; bottom: 0; overflow: hidden;}
+#menberTab{ width: 100%; height: 44px; background-color: #fff;}
+.menberTabLi{ border: 0; border-bottom: 2px solid #ccc; width: 33.33%; padding: .65em 12px; display: inline-block; float: left; text-align: center; box-sizing: border-box; background: 0; -webkit-box-shadow: 10px 0 0 -9px #ccc; -moz-box-shadow: 10px 0 0 -9px #ccc; box-shadow: 10px 0 0 -9px #ccc; cursor: pointer;}
+.menberTabLiA{ border-bottom-color: #0aa7ff; color: #0aa7ff;}
+#menberTabBody{ display: block; width: 100%; position: absolute; left: 0; top:44px; bottom: 0; overflow: auto;}
+.menberTabBodyLi{ display: none; position: absolute; width: 100%; min-height: 38px; height: auto; }
+.menberTabBodyLi .active{ display: block;}
+#friendGroupList{ width: 100%; overflow: hidden;}
+.listGroup{ display: block; width: 100%; min-height: 38px; height: auto; cursor: pointer;}
+.listGroupTitle{ padding: 10px 28px 12px 28px; width: 224px; height: 16px; background: url("images/open_arrow.png") no-repeat 12px; background-size: 14px 14px; border-bottom: 1px solid #ccc;}
+.TitleActive{ background-image: url("images/open_arrow_fire.png");}
+.listGroupTitlenName{ display: inline-block; float: left; font-size: 16px; line-height: 16px;}
+.onlinePercent{ color: gray; font-size: 12px; float: right; line-height: 20px;}
+.listGroupBody{ width: 100%; display: none;}
+.listItem{ position: relative; border-bottom: 1px solid #e3e3e3; padding: .15em 1px; width: 278px; height: 56px; background: linear-gradient(#fff,#f1f1f1); cursor: pointer; }
+
+/*发现区*/
+#plugin_list{ width: 100%;}
+#plugin_list li{ display: block; width: 91px; height: 91px; cursor: pointer; position: relative; float: left; background-image: linear-gradient(#e7e8eb,#dadbe0 50%,#c7cbd2 75%,#d3d6db 95%,#d3d6dd);}
+.listicon{ display: block; position: absolute; top: 10px; left: 19px; width: 55px; height: 55px; }
+#plugin_list li a{ position: absolute; bottom: 6px; left: 0; display: block; width: 100%; height: 19px; line-height: 19px; font-size: 13px; color: #000; text-align: center;}
+#qzone,#qmail,#qq_portal{ border: 1px solid #eceef2; border-bottom-color: #c1c7d2; border-right-color: #c1c7d2;}
+#qzone .listicon{ background-image: url("images/plugin_icon_qzone.jpg"); background-repeat: no-repeat; background-size: 55px 55px;}
+#qmail .listicon{ background-image: url("images/plugin_icon_qmail.jpg") ;background-repeat: no-repeat; background-size: 55px 55px;}
+#qq_portal .listicon{ background-image: url("images/plugin_icon_qq_portal.png"); background-repeat: no-repeat; background-size: 55px 55px;}
+
+/*设置区*/
+.settingSection{ width: 100%; overflow: hidden;}
+.group{ padding: 10px; width: 260px;}
+.row{ width: 238px; height: auto; border: 1px solid #afc8e2; padding: 10px; background: #fff; border-radius: 5px;}
+.firstrow{ height: 60px;}
+.userHeadimage{ width: 56px; height: 58px; float: left;}
+.userHeadimage img{ width: 40px; height: 40px; margin: 10px 8px 8px 8px;}
+.userInfo{ padding: 5px 0 0 5px; float: left; width: 147px; height: 50px; vertical-align: baseline;}
+.username{ font-size: 1.4em; line-height: 1.3em; color: #000;}
+.userID{ color: #666; font-size: 0.9em; line-height: 0.8em;}
+.state{ width: 22px; height: 20px; margin-top: 30px; float: right; position: relative;}
+.onlineStateSet{ display: block; width: 10px; height: 10px; background-image: url("images/state_sprite.gif"); background-repeat: no-repeat; float: left; margin-right: 2px;}
+.dropDown{ width: 10px; height: 10px; background-image: url("images/state_sprite.gif"); background-repeat: no-repeat; background-position: -162px 4px; float: left; cursor: pointer;} 
+.scrollArea .onlineStateSetUl{ display: none; position: absolute; z-index:50; border: 1px solid #000; top: 20px; left: -40px; background: #fff; width: 70px;}
+.onlineStateSetUl li{ padding: 5px 3px; cursor: pointer; font-size: 10px; line-height: 10px; vertical-align: baseline; text-align: -webkit-match-parent;}
+.onlineStateSetUl li:hover{ background-color: #cff7ff;}
+.onlineStateSetUl li i{ display: block; width: 10px; height: 10px; line-height: 10px; background-image: url("images/state_sprite.gif"); background-repeat: no-repeat; float: left; margin-right: 2px; }
+.online_icon{ background-position: 0 0;}
+.callme_icon { background-position: -72px 0;}
+.away_icon { background-position: -18px 0;} 
+.busy_icon { background-position: -36px 0;}
+.silent_icon { background-position: -108px 0;}
+.hidden_icon { background-position: -54px 0;}
+.offline_icon { background-position: -90px 0;}
+.gexingqianming{ height: 22px; line-height: 22px; font-size: 16px;}
+.label{ color: #666; float: left; margin-right: 10px;}
+.messageSet,.aboutQQ,.exit,.QQinfo,.service,.help{ height: 16px; line-height: 16px; font-size: 16px;}
+.QQinfo{ border-radius: 0; border-top-left-radius: 6px;  border-top-right-radius: 6px; border-bottom: 0;}
+.service{ border-radius: 0; border-bottom: 0;}
+.help{ border-radius: 0; border-bottom-left-radius: 6px;  border-bottom-right-radius: 6px;}
+.more_icon{ display: block; float: right; width: 16px; height: 16px; background-image: url("images/open_arrow.png"); background-size: 16px 16px; float: right;}
+.more_icon_open{ background-image: url("images/open_arrow_fire.png");}
+.exit{ background: linear-gradient(#f74634,#ce2715)!important; text-shadow: 0 0 10px #969696; color: #fff; text-align: center;}
+
+/*footer*/
+#navTab{ width: 100%;height: 100%;display: block;}
+.navTHead{ width: 100%;height: 100%;display: block;}
+#navTab li{ display: list-item; position: relative;overflow: hidden; height: 50px;border-right: 1px solid #222;border-left: 1px solid #555;color: #ccc;font-size: 14px;text-align: center;text-shadow: 0 -1px 0 #000;-webkit-box-shadow: inset 0 0 10px transparent; -moz-box-shadow: inset 0 0 10px transparent; box-shadow: inset 0 0 10px transparent;cursor: pointer;}
+#navTab #session{ width: 68px; height: 100%;color: #fff;float: left;border-left: 0;border-radius: 0 0 0 6px;}
+#navTab #contact{ width: 70px; height: 100%;color: #fff;float: left;}
+#navTab #plugin{ width: 68px; height: 100%;color: #fff;float: left;}
+#navTab #setting{ width: 68px; height: 100%;color: #fff;float: left;border-right: 0;border-radius: 0 6px 0 0;}
+#navTab li a{display: inline-block;overflow: hidden;height: 100%;position: relative;text-align: center;}
+.icon{ display: inline-block;width: 34px;height: 34px;background-size: 100% 100%; }
+#navTab a span{display: block;position: relative;bottom: 4px;width: 100%;font-size: 12px; color: rgb(204, 204, 204); line-height: 12px;}
+.Selected{background: #333;border-left-color: #222;color: #fff;text-shadow: 0 1px 0 #000;-webkit-box-shadow: inset 0 0 10px #111;box-shadow: inset 0 0 10px #111;}
+#session .icon{background-image: url("images/tab_icon_conversation.png");}
+#contact .icon{background-image: url("images/tab_icon_contact.png");}
+#plugin .icon{background-image: url("images/tab_icon_plugin.png");}
+#setting .icon{background-image: url("images/tab_icon_setup.png");}
+#session .newicon{ background-image: url("images/tab_icon_conversation_selected.png");}
+#contact .newicon{ background-image: url("images/tab_icon_contact_selected.png");}
+#plugin .newicon{ background-image: url("images/tab_icon_plugin_selected.png");}
+#setting .newicon{ background-image: url("images/tab_icon_setup_selected.png");}
+/*换肤*/
+.changeBg{ width: 55px; height: 21px; position: absolute; bottom: -44px;}
+.change{ width: 19px; height: 19px; margin: 0 3px; overflow: hidden; background: url("images/arrow.png") no-repeat; display: inline-block;}
+.changeBgFre{ background-position: -2px -2px;}
+.changeBgFre:hover{ background-position: -3px -42px;}
+.changeBgNext{ background-position: -25px -2px;}
+.changeBgNext:hover{ background-position: -26px -42px;}
+.suggestion{ position: absolute; right: 0; font-size: 12px; background: rgba(0,0,0,.5); padding: 2px 0; border-radius: 10px; bottom: -42px; display: block; color: #000; width: 80px; text-align: center; left: 50%; margin-left: -40px;}
+.suggestion a{ color: #fff;}
+.active{ display: block;}
+
+/***********右侧区域***********/
+#rightPanel{ position: relative; height: 80%; top: 12%; display: block; width: 700px; }
+/*************消息设置窗口*************/
+#messageSetP{ display: none; position: absolute; left: 0; top: 0px; z-index: 50; bottom: 0px; width: 100%; height: 100%; background-color: #999; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+.leftbtn{ display: block; float: left; cursor: pointer; width: 105px; height: 45px; border-top-left-radius: 6px; background-image: url("images/leftbtn.png");}
+.messageSetPTitle{ padding: 10px; font-weight: 400; width: 500px; height: 25px; float: left; font-size: 18px; line-height: 25px; text-align: center; color: #fff;}
+.messageSetPbody{ position: absolute; top: 45px; left: 0; width: 100%; bottom: 0; overflow: auto; background-color: #ededed;}
+.messageSetPbody .group{ padding: 10px; width: 680px;}
+.messageSetPbody .row{ width: 658px; border: 1px solid #afc8e2; font-size: 16px; padding: 10px; background: #fff; border-radius: 0;}
+.messageSetPbody .voice{ height: 26px; border-top-right-radius: 5px; border-top-left-radius: 5px;}
+.messageSetPbody .messageForm{ height: 26px; font-size: 16px; border-top: 0; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px;}
+.messageSetPbody .http{ height: 40px; border-radius: 5px;}
+.messageSetPbody .sendmessage{ height: 24px; border-radius: 5px;}
+.messageSetPbody .label{ color: #666; float: left;}
+.checkbox{ position: relative; float: right; width: 56px; height: 24px; border-radius: 12px; background-image: -webkit-linear-gradient(#d0d0d0,#dfdfdf); background-image: -o-linear-gradient(#d0d0d0,#dfdfdf); background-image: linear-gradient(#d0d0d0,#dfdfdf);}
+.checked{ background-image: -webkit-linear-gradient(#5393c5,#6facd5); background-image: -o-linear-gradient(#5393c5,#6facd5); background-image: linear-gradient(#5393c5,#6facd5);}
+.checkbox span{ width: 22px; height: 22px; border-radius: 11px; background-color: #fff; position: absolute; top: 1px; left: 3px;}
+.checkbox .spanChecked{ left: 30px;}
+
+/***********聊天窗口**********/
+.chatPanel{ width: 100%;height: 100%;position: absolute;outline:none; z-index: 30;}
+.chatHeader{width: 100%;height: 45px; border-radius: 6px 6px 0 0;position: relative; background-image: -webkit-linear-gradient(rgb(85, 85, 85), rgb(34, 34, 34));}
+.chatHeaderLeftButton{width: 51px;height: 19px;padding: 6px 10px;border:1px solid;border-radius: 5px;margin: 5px 0 7px 15px;float: left;position: relative;cursor: pointer; }
+.chatHeaderLeftButtonI{ width: 14px; height: 14px; margin: 0 4px;display: block;background-image: url("../images/pannel-arrow-down.png");background-size: 100% 100%;}
+
+.chatTitle{ display: block; width:471px; height: 18px;padding: 13.5px 30px 13.5px 20px;float: left;text-align: center;font-family: 微软雅黑;font-size: 18px;color: #fff;line-height: 18px;font-weight: normal;}
+.chatHeaderRightButton{cursor: pointer; width: 57px;height: 19px;padding: 6px 10px;border:1px solid; vertical-align : center; border-radius: 5px;margin: 5px 10px 7px 2px;float: left;position: relative; }
+.chatHeaderRightButtonI{ max-width: 100px; width: auto; height: 14px; line-height: 18px;  text-align: center; display: block;font-family: 微软雅黑;font-size: 14px;color: #fff;}
+
+.chatBodyWrapper{ width: 100%;position: absolute;top: 45px; bottom: 50px; left: 0;height: auto;}
+.chatBodyBox{  width: 100%; height: 100%;position: relative;background-image: -webkit-linear-gradient(rgb(255, 255, 255), rgb(241, 241, 241));overflow: auto;}
+.chatTime{ text-align: center;width: 100%; height: 37px; }
+.chatTime span{color: rgba(255,255,255,0.8);background: rgba(0,0,0,0.3);padding: 2px 8px;display: inline-block;margin: 10px;font-size: 13px;border-radius: 8px;font-family: 微软雅黑;}
+.chatContent {text-align: left;}
+.chatContentSelf{text-align: right;padding: 10px;width: 95%;height: 86px;}
+.chatContentOther{text-align: left;padding: 10px;width: 95%;height: 86px;}
+.chatContentSelf .avatarImg{ width: 40px; height: 40px;margin-left: 10px;float: right;}
+.chatContentOther .avatarImg{ width: 40px; height: 40px;margin-right: 10px;float: left;}
+.chatContentSelf .chatNick{font-size: 14px;margin: 0 0 10px;width: 100%;height: 14px;line-height: 14px;font-family: 微软雅黑;text-align: right;}
+.chatContentOther .chatNick{font-size: 14px;margin-left: 10px; margin-bottom: 10px; width: 100%;height: 14px;line-height: 14px;font-family: 微软雅黑;text-align: left;}
+.chatContent{ font-family: 微软雅黑; display: inline-block;min-height: 16px;max-width: 50%;background: #97c94c;border-radius: 5px;padding: 10px 15px;word-break: break-all;box-shadow: 1px 1px 5px #000;line-height: 1.4; background-image: -webkit-linear-gradient(rgb(204, 255, 153), rgb(153, 204, 51));}
+
+.pannelMenuList{position: absolute;width: 100%;height: 80px;left: 0;top: 45px;overflow: hidden;background: #3C3C3C;box-shadow: #141111 0 2px 5px;display: none;}
+.pannelMenuList li {height: 80px;width: 80px;text-align: center;float: left;font-size: 12px;border-right: 1px solid #222;border-left: 1px solid #555;cursor: pointer;color: white;background-image: -webkit-linear-gradient(top, #4E4E4E, #2C2C2C);font-family: 微软雅黑;}
+.menuListIcon{width: 40px;height: 40px;margin: 10px auto 5px;background-image: url("images/menu_icons.png");background-repeat: no-repeat;}
+.menuListIcon1{background-position: -128px 3px;}
+.menuListIcon2{background-position: -43px 2px;}
+.menuListIcon3{background-position: -90px 2px;}
+
+.chatFooter{display: block; width: 100%; height: 50px; position: absolute; left: 0;bottom: 0;border-radius: 0 0 6px 6px;background-image: -webkit-linear-gradient(rgb(85, 85, 85), rgb(34, 34, 34));display:box;}
+.facemenu{ position: absolute;width: 100%;height: 50px;background-color: #000;top: -50px;left: 0;display: none;}
+.faceItem{height: 50px;float: left;}
+.faceItem i{ width: 70px;height: 50px;display: block;float: left; background-image: url("../images/1.jpg");cursor: pointer; background-size: 800% 500%; }
+.faceItem i:nth-child(1){background-position: -5px -15px;}
+.faceItem i:nth-child(2){background-position: -85px -15px;}
+.faceItem i:nth-child(3){background-position: -165px -15px;}
+.faceItem i:nth-child(4){background-position: -245px -15px;}
+.faceItem i:nth-child(5){background-position: -325px -15px;}
+.faceItem i:nth-child(6){background-position: -405px -15px;}
+.faceItem i:nth-child(7){background-position: -485px -15px;}
+.faceItem i:nth-child(8){background-position: -5px -100px;}
+.faceItem i:nth-child(9){background-position: -85px -100px;}
+.faceItem i:nth-child(10){background-position: -485px -185px;}
+
+.chatToolbar{ width: 100%; height: 100%;padding: 3px 10px 5px 6px;box-sizing: border-box;}
+.addFaceBtn{width: 38px; height: 32px; padding: 5px;display: block; float: left;cursor: pointer;}
+.btnImg{ width: 30px; height: 30px; margin: 0 4px; display: block;background-image: url("../images/chat_bottombar_icon_face.png");background-size: 100% 100%;}
+.chatTextarea{outline:none;float: left; box-shadow: inset 0 1px 4px rgba(0,0,0,0.2); max-width: 570px; box-sizing: border-box; width: 100%; display: block;border-radius: 5px; resize: none; padding: 5px 10px;height: 32px; font-size: 14px; line-height: 22px; margin: 5px 10px 5px 6px;max-height: 80px;overflow: hidden; }
+.sendBtn{outline: none; margin: 2px 0; width: 50px;height: 38px; box-sizing: border-box; padding: 6px 10px; cursor: pointer;display: block;float: left;background: -webkit-linear-gradient(top,#5f9cc5,#396b9e);text-shadow: 0 1px 1px #194b7e;position: relative;border: 1px solid #044062;border-radius: 5px;text-align: center;}
+.sendBtn span{ font-family: 微软雅黑; line-height: 24px; font-size: 14px;color: #fff;}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>配色助手</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="配色、配色助手、web color、前端设计助手">
+	<meta name="description" content="前端设计配色助手，配色方案参考">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div id="panel">
+		<div id="header">
+			<h1>网页设计常用色彩搭配表<span>《配色表》</span></h1>
+			<div id="author">制作 by <a href="http://user.qzone.qq.com/1075737942">子胥吾有</a>
+			</div>
+		</div>
+		<div id="nav">
+			<!-- <h4>按色相的搭配分类</h4>
+			<div id="hueList">
+				<a href="#hue_0">红色</a>
+				<a href="#hue_1">橙色</a>
+				<a href="#hue_2">黄色</a>
+				<a href="#hue_3">黄绿色</a>
+				<a href="#hue_4">绿色</a>
+				<a href="#hue_5">青绿色</a>
+				<a href="#hue_6">蓝色</a>
+				<a href="#hue_7">蓝紫色</a>
+				<a href="#hue_8">紫色</a>
+				<a href="#hue_9">紫红色</a>
+			</div>
+			<h4>按印象的搭配分类</h4>
+			<div id="characterList">
+				<a href="#character_0">柔和、明亮、温柔 </a>
+				<a href="#character_1">柔和、洁净、爽朗 </a>
+				<a href="#character_2">可爱、快乐、有趣 </a>
+				<a href="#character_3">活泼、快乐、有趣 </a>
+				<a href="#character_4">运动型、轻快 </a>
+				<a href="#character_5">轻快、华丽、动感 </a>
+				<a href="#character_6">狂野、充沛、动感 </a>
+				<a href="#character_7">华丽、花哨、女性化 </a>
+				<a href="#character_8">回味、女性化、优雅 </a>
+				<a href="#character_9">高尚、自然、安稳 </a>
+				<a href="#character_10">冷静、自然 </a>
+				<a href="#character_11">传统、高雅、优雅 </a>
+				<a href="#character_12">传统、稳重、古典 </a>
+				<a href="#character_13">忠厚、稳重、有品位 </a>
+				<a href="#character_14">简单、洁净、进步 </a>
+				<a href="#character_15">简单、时尚、高雅 </a>
+				<a href="#character_16">简单、进步、时尚 </a>
+			</div> -->
+		</div>
+	</div>
+	<div id="wrapper">
+		<div id="colorTool">
+			<div class="controlArea">
+				<span class="ColorValSpan">请输入16进制颜色值:<input id="ColorVal" type="text" placeHolder="形如：#6C3AFF"></span>
+				<div id="ColorRGB">
+					<div class="colorR">
+						<span class="ColorRSpan">R:<input class="ColorRVal" type="text" value="0"></span>
+						<div class="ColorRProgress">
+							<div class="pro" id="proR">
+								<span class="dian" id="dianR"></span>
+							</div> 
+						</div>
+					</div>
+					<div class="colorG">
+						<span class="ColorGSpan">G:<input class="ColorGVal" type="text" value="0"></span>
+						<div class="ColorGProgress">
+							<div class="pro" id="proG">
+								<span class="dian" id="dianG"></span>
+							</div> 
+						</div>
+					</div>
+					<div class="colorB">
+						<span class="ColorBSpan">B:<input class="ColorBVal" type="text" value="0"></span>
+						<div class="ColorBProgress">
+							<div class="pro" id="proB">
+								<span class="dian" id="dianB"></span>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="displayArea">
+				<span class="showColor" style="background:#000000"></span>
+				<input class="showColorVal" type="text" value="#000000">
+				<input class="showColorRGBVal" type="text" value="rgb(0,0,0)">
+			</div>
+		</div>
+		<div id="main">
+			<!-- <div class="section sechue">
+				<h2>按色相的搭配分类</h2>
+				<span class="discription">本节将网页设计中常见的色彩搭配按照色相的顺序归类。每类都以该色相为主，配以其他色相或者同色相的，应用对比和调和的方法，并按照从轻快到浓烈的顺序排序。</span>
+				<div class="subSection" id="hue_0">
+					<h3>红色</h3>
+					<div class="groups">
+						<div class="group">
+							<span style="background:#FFFFCC"><input type="text" value="#FFFFCC"></span>
+							<span style="background:#CCFFFF"><input type="text" value="#CCFFFF"></span>
+							<span style="background:#FFCCCC"><input type="text" value="#FFCCCC"></span>
+						</div>
+						<div class="group">
+							<span style="background:#99CCCC"><input type="text" value="#99CCCC"></span>
+							<span style="background:#FFCC99"><input type="text" value="#FFCC99"></span>
+							<span style="background:#FFCCCC"><input type="text" value="#FFCCCC"></span>
+						</div>
+						<div class="group">
+							<span style="background:#FF9999"><input type="text" value="#FF9999"></span>
+							<span style="background:#996699"><input type="text" value="#996699"></span>
+							<span style="background:#FFCCCC"><input type="text" value="#FFCCCC"></span>
+						</div>
+						<div class="group">
+							<span style="background:#CC9999"><input type="text" value="#CC9999"></span>
+							<span style="background:#FFFFCC"><input type="text" value="#FFFFCC"></span>
+							<span style="background:#CCCC99"><input type="text" value="#CCCC99"></span>
+						</div>
+						<div class="group">
+							<span style="background:#FFCCCC"><input type="text" value="#FFCCCC"></span>
+							<span style="background:#FFFF99"><input type="text" value="#FFFF99"></span>
+							<span style="background:#CCCCFF"><input type="text" value="#CCCCFF"></span>
+						</div>
+						<div class="group">
+							<span style="background:#0099CC"><input type="text" value="#0099CC"></span>
+							<span style="background:#CCCCCC"><input type="text" value="#CCCCCC"></span>
+							<span style="background:#FF6666"><input type="text" value="#FF6666"></span>
+						</div>
+						<div class="group">
+							<span style="background:#FF9966"><input type="text" value="#FF9966"></span>
+							<span style="background:#FF6666"><input type="text" value="#FF6666"></span>
+							<span style="background:#FFCCCC"><input type="text" value="#FFCCCC"></span>
+						</div>
+						<div class="group">
+							<span style="background:#CC9966"><input type="text" value="#CC9966"></span>
+							<span style="background:#666666"><input type="text" value="#666666"></span>
+							<span style="background:#CC9999"><input type="text" value="#CC9999"></span>
+						</div>
+						<div class="group">
+							<span style="background:#FF6666"><input type="text" value="#FF6666"></span>
+							<span style="background:#FFFF66"><input type="text" value="#FFFF66"></span>
+							<span style="background:#99CC66"><input type="text" value="#99CC66"></span>
+						</div>
+						<div class="group">
+							<span style="background:#CC3333"><input type="text" value="#CC3333"></span>
+							<span style="background:#CCCCCC"><input type="text" value="#CCCCCC"></span>
+							<span style="background:#003366"><input type="text" value="#003366"></span>
+						</div>
+						<div class="group">
+							<span style="background:#993333"><input type="text" value="#993333"></span>
+							<span style="background:#CCCC00"><input type="text" value="#CCCC00"></span>
+							<span style="background:#663366"><input type="text" value="#663366"></span>
+						</div>
+						<div class="group">
+							<span style="background:#CCCC99"><input type="text" value="#CCCC99"></span>
+							<span style="background:#666666"><input type="text" value="#666666"></span>
+							<span style="background:#CC9999"><input type="text" value="#CC9999"></span>
+						</div>
+						<div class="group">
+							<span style="background:#FF6666"><input type="text" value="#FF6666"></span>
+							<span style="background:#FFFF00"><input type="text" value="#FFFF00"></span>
+							<span style="background:#0066CC"><input type="text" value="#0066CC"></span>
+						</div>
+						<div class="group">
+							<span style="background:#CC0033"><input type="text" value="#CC0033"></span>
+							<span style="background:#333333"><input type="text" value="#333333"></span>
+							<span style="background:#CCCC00"><input type="text" value="#CCCC00"></span>
+						</div>
+						<div class="group">
+							<span style="background:#336633"><input type="text" value="#336633"></span>
+							<span style="background:#990033"><input type="text" value="#990033"></span>
+							<span style="background:#FFCC99"><input type="text" value="#FFCC99"></span>
+						</div>
+						<div class="group">
+							<span style="background:#993333"><input type="text" value="#993333"></span>
+							<span style="background:#CC9966"><input type="text" value="#CC9966"></span>
+							<span style="background:#003300"><input type="text" value="#003300"></span>
+						</div>
+						<div class="group">
+							<span style="background:#FF0033"><input type="text" value="#FF0033"></span>
+							<span style="background:#333399"><input type="text" value="#333399"></span>
+							<span style="background:#CCCC00"><input type="text" value="#CCCC00"></span>
+						</div>
+						<div class="group">
+							<span style="background:#CC0033"><input type="text" value="#CC0033"></span>
+							<span style="background:#000000"><input type="text" value="#000000"></span>
+							<span style="background:#003399"><input type="text" value="#003399"></span>
+						</div>
+						<div class="group">
+							<span style="background:#000000"><input type="text" value="#000000"></span>
+							<span style="background:#99CC00"><input type="text" value="#99CC00"></span>
+							<span style="background:#CC0033"><input type="text" value="#CC0033"></span>
+						</div>
+						<div class="group">
+							<span style="background:#999933"><input type="text" value="#999933"></span>
+							<span style="background:#993333"><input type="text" value="#993333"></span>
+							<span style="background:#333300"><input type="text" value="#333300"></span>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			
+		</div>
+	</div>
+</body>
+</html>

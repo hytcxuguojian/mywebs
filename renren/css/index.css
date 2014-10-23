@@ -1,0 +1,103 @@
+*{margin: 0; padding: 0;}
+body{ width: 100%;  text-align: left; font-size: 9pt; font-family:'Open Sans',Tahoma,Verdana,STHeiTi,simsun,"Microsoft Yahei","Hiragino Sans GB",sans-serif;}
+img{ border: 0px; }
+a{ text-decoration: none;}
+ul,li{ list-style: none; list-style-position: outside; }
+
+
+/******************主要框架begin******************/
+#topnav{ width: 100%; height: 74px; background: url("images/bg.png") repeat-x;}
+#loginPage{ width: 980px; height: 509px; margin: 0 auto 20px auto;}
+#sideColumn{ width: 220px; height: 510px; float: left; border: 1px solid #d4d4d4; border-bottom-color: #AAA; border-top: 0; box-shadow: 0 1px 1px #CCC; margin: -2px 35px 0 0; background: #EBF2FA url("images/sidebar-bg.png") left top no-repeat;}
+#mainRight{ width: 700px; height: 500px; float: left; }
+#footer{ width: 100%; height: 191px;}
+/******************主要框架 end ******************/
+
+/******************页眉 begin******************/
+#topNavInner{ width: 960px; height: 106px; margin: 0 auto; position: relative;}
+#topInner{ width: 980px; margin: 0 auto;}
+#logo{  width: 222px; height: 72px; float: left; margin-right: 35px; background-color: #fff;}
+#renrenLogo{ display: block; width: 222px; height: 72px; background-image: url("images/logo_v6.png");}
+#topTitle{ display:inline-block; width: 350px; height: 24px; margin-top: 25px; color: #fff; font-size: 24px;}
+#topOther{ float: right; height: 24px; margin-top: 25px; }
+.menu{ float: left; height: 24px;}
+#moreC{ position: relative;}
+.menuA{ padding: 0 10px; height: 24px; line-height: 24px; display: inline-block; color: #cee1ee;}
+.more{ padding-right: 18px; background-image: url("images/icon_new.png"); background-position: 30px 10px; background-repeat: no-repeat; cursor: pointer;}
+#webList{ display: none; position: absolute; top: 24px; right: 0; z-index: 100; width: 228px; height: 120px; background-color: #fff; padding: 8px 0;}
+#webList ul{ width: 213px; height: 120px; padding-left: 15px;}
+#webList ul li{ display: block; float: left; width: 70px; height: 24px; line-height: 24px; }
+#webList ul li a{ color: #333; line-height: 24px; padding: 0;}
+#webList ul li a:hover{ text-decoration: underline;}
+/******************页眉 end******************/
+
+/******************主页面 begin******************/
+/*mainLeft*/
+#loginPanel{ width: 220px; height: 286px; position: relative;}
+#loginError{ display: block; position: absolute; width: 188px; height: 20px; line-height: 20px; padding-left: 5px; font-size: 14px; color: #f00; font-weight: bold; text-align: center; top: 10px; left: 15px; }
+#loginForm{ width: 190px; height: 165px; padding: 35px 15px 15px 15px;}
+.userName,.passward{display: block; width: 186px; background-color: #FFF; border: 1px solid #adb6c9; border-radius: 3px; height: 32px; line-height: 32px; box-shadow: 0 0 1px #FFF; padding: 1px;}
+.passward{ margin-top: 15px;}
+.userPic{ display: block; float: left; width: 28px; height: 28px; background-image: url("images/bg_new1.png"); background-position: 1px -204px;}
+.inputText{ display: block; float: left; width: 155px; height: 32px; line-height: 32px; border:0; font-size: 14px; color: rgb(136,136,136); outline: none;}
+.pwdPic{ display: block; float: left; width: 28px; height: 28px; background-image: url("images/bg_new1.png"); background-position: 0px -233px;}
+.savePwd{ width: 190px; height: 27px; margin: 5px 0;}
+.labelCheckbox{ float: left; width: 100px; height: 27px; line-height: 27px; font-size: 12px; color: #333;}
+#autoLogin{ margin-right: 5px; width: 13px; height: 13px; }
+.forgetPwd{ float: right; color: #005eac; text-decoration: none; font-size: 12px; line-height: 27px;}
+.forgetPwd:hover{ text-decoration: underline;}
+.bottom{ width: 190px; height: 41px;}
+.btn{ width: 190px; height: 38px; margin-top: 3px; cursor: pointer;}
+#newStudentReg{ width: 190px; height: 38px; margin: 0 15px 30px; padding: 17px 0 15px;}
+#loginbtn{ background: url("images/btn.png") no-repeat; }
+#newStudentRegbtn{ background: url("images/student-enter.png") no-repeat;}
+
+#loginCorp{ width: 190px; height: 71px; padding: 0 15px; }
+#loginCorp span{ color: #666; padding-bottom: 10px;}
+#loginCorp ul{ width: 190px; height: 60px; margin-top: 10px;}
+#loginCorp li{ display: block; float: left; height: 16px; max-width: 100px; margin: 0 17px 5px 0;}
+.linkPic{  height: 16px; font-size: 12px; line-height: 16px; color: #005eac; padding-left: 22px; background-image: url("images/icon_new.png"); background-repeat: no-repeat;}
+.linkPic:hover{ text-decoration: underline;}
+#MSN{ background-position: 0 -290px;}
+#A360{ background-position: 0 -324px;}
+#tianyi{ background-position: 0 -382px;}
+#baidu{ background-position: 0 -416px;}
+#yidong{ background-position: 0 -448px;}
+
+/*mainRight*/
+.regist{ margin-top: 30px; width: 700px; position: relative; height: 260px; margin-bottom: 40px;}
+.regist h3{ color: rgb(51,51,51); font-size: 18px; font-weight: bold; margin-bottom: 5px;}
+.regist p{ color: rgb(136,136,136); display: block; font-size: 14px; width: 700px; height: 19px; line-height: 19px; margin-bottom: 15px;}
+.messagePic{ width: 365px; height: 230px; position: absolute; top: 0; right: 0; z-index: 1; background: url("images/message-pic.jpg"); background-size: 365px 230px; }
+.index{ width: 700px;}
+.index ul li{ display: block; font-size: 12px; width: 297px; height: 37px; line-height: 30px; padding-bottom: 5px; padding-top: 5px;}
+.index ul li span{ display: block; float: left; color: rgb(102, 102, 102); cursor: pointer; width: 70px; font-size: 14px; line-height: 28px; text-align: right; vertical-align: middle;}
+.listDiv{ float: right; border: 1px solid #adb6c9; width: 215px; height: 35px;}
+.Contains{ width: 217px; height: 37px; float: right; }
+.selector{ width: 209px; height: 22px; padding: 2px 3px 2px 3px; border: 0; vertical-align: text-top; line-height: 14px; font-size: 12px; outline: none;}
+.year{ width: 75px; margin-right: 8px; float: left;}
+.month{ width: 60px; margin-right: 8px; float: left;}
+.day{ width: 60px; float: left;}
+.zhucebtn{ width: 294px; height: 38px; padding: 5px 0; margin-top: 15px;}
+.arrow{ width: 214px; height: 38px; background-image: url("images/bg_new.png"); float: right;}
+
+.youcando{ width: 700px; height: 87px; padding: 30px 0 15px 0; border-top: 1px solid #DDD;}
+.youcando span{ display: block; font-size: 16px; font-weight: bold; margin-bottom: 20px; color: rgb(51,51,51); }
+.youcando li{ float: left; width: 210px; height: 14px; line-height: 14px; font-size: 12px; color: rgb(51, 51, 51); margin-bottom: 10px; padding-left: 13px; background-image: url("images/icon_new.png"); background-position: 2px -355px; background-repeat: no-repeat;}
+
+/*底部*/
+.siteFooter{ width: 980px; height: 180px; margin: 0 auto; padding-top: 10px; border-top: 1px solid #cee1ee; overflow: hidden;}
+.describe{ width: 980px; height: 14px;}
+.link{ width: 813px; height: 14px; float: right; margin-right: -10px;}
+.link li{ display: inline-block; height: 14px; margin-right: 3px; }
+.link li a{ color: #005eac; font-size: 12px; line-height: 14px; text-decoration: none;}
+.link li a:after{ content: " |"; color: #AAA; text-decoration: none;}
+.link li a:hover{ text-decoration: underline;}
+.copyright{ float: left; color: #808080; width: auto; height:14px; line-height: 14px; font-size: 12px;}
+.haoes{ clear: both; color: #888; font-size: 11px; padding: 8px; background: #f7f7f7; margin-top: 15px; text-align: center; line-height: 25px;}
+.haoes a{ color: #888; background-color: #f7f7f7;}
+.company-name{ display: block; height: 16px; line-height: 16px;}
+.dot{ font-weight: bold; margin: 0 8px;}
+.special-add{ display: block; height: 24px; line-height: 16px; vertical-align: middle;}
+
+

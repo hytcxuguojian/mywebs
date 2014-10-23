@@ -1,9 +1,9 @@
 $(function(){
 	$(".ContentItem").hover(function(){
-		$(this).css("border","2px solid #389cff")
+		$(this).css("border-color","#389cff")
 		$(this).find(".ContentItemSpan").fadeOut();
 	},function(){
-		$(this).css("border","");
+		$(this).css("border-color","");
 		$(this).find(".ContentItemSpan").fadeIn();
 	});
 });

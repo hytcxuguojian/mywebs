@@ -20,7 +20,7 @@ ul,li{ list-style: none; list-style-position: outside; }
 
 /******************页眉 begin******************/
 #topNavInner{ width: 1240px; height: 36px; margin: 0 auto; }
-#topNavLeft{ width: 438px; height: 36px; float: left; }
+#topNavLeft{ width: 450px; height: 36px; float: left; }
 #topNavRight{ width: 80px; height: 28px; float: right;}
 .TopA{ color: #8C8C8C;}
 .TopA:hover{ color: #333;}
@@ -35,9 +35,9 @@ ul,li{ list-style: none; list-style-position: outside; }
 #searchBar{ position: relative; width: 422px; height: 38px; border: 1px solid #dfdfdf; float: left; }
 #searchText{ display: block; float: left; width: 352px; height: 20px; font-size: 14px; outline: none; padding: 9px 15px; border: 0; line-height: 20px; color: #333; background: #fff;}
 #searchLogo{ width: 38px; height: 38px; display: block; float: right; background-image: url("images/search1.jpg"); }
-#shopingCar{ position: relative; z-index: 21; display: block; float: right; width: 104px; height: 20px; padding: 9px 10px; font-size: 14px; border: 1px solid #ffdb3d; line-height: 20px; text-align: center; color: #333; background: #ffdb3d;}
-#shopingCarSub1{position: absolute; top: 0; right: 0; z-index: 23; display: none; width: 104px; height: 35px; padding: 9px 10px; font-size: 14px; border: 1px solid #ff4a00; border-bottom: 0; line-height: 20px; text-align: center; color: #333; background: #fff;}
-#shopingCarSub2{position: absolute; top: 52px; right: 0; z-index: 22; display: none; width: 292px; height: auto; min-height: 18px; padding: 20px; font-size: 14px; border: 1px solid #ff4a00; line-height: 20px; text-align: center; color: #8C8C8C; background: #fff;}
+#shopingCar{ position: relative; z-index: 100; display: block; float: right; width: 104px; height: 20px; padding: 9px 10px; font-size: 14px; border: 1px solid #ffdb3d; line-height: 20px; text-align: center; color: #333; background: #ffdb3d;}
+#shopingCarSub1{position: absolute; top: 0; right: 0; z-index: 100; display: none; width: 104px; height: 35px; padding: 9px 10px; font-size: 14px; border: 1px solid #ff4a00; border-bottom: 0; line-height: 20px; text-align: center; color: #333; background: #fff;}
+#shopingCarSub2{position: absolute; top: 52px; right: 0; z-index: 99; display: none; width: 292px; height: auto; min-height: 18px; padding: 20px; font-size: 14px; border: 1px solid #ff4a00; line-height: 20px; text-align: center; color: #8C8C8C; background: #fff;}
 .hotWords{ position: absolute; top: 12px; left: 177px; font-size: 12px;}
 .hotWords a{display: inline-block; padding: 1px 3px; margin-left: 5px; color: #333; background: #f3f3f3;}
 .searchList{ width: 382px; padding-top: 15px; position: absolute; z-index: 30; left: -1px; top: 39px; border:1px solid #dfdfdf; border-top: 0; display: none;}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>人人网 中国领先的实名制SNS社交网络。加入人人网，找到老同学，结识新朋友。</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="Keywords" content="Xiaonei,Renren,校内,大学,同学,同事,白领,个人主页,博客,相册,群组,社区,交友,聊天,音乐,视频,校园,人人,人人网">
+	<meta name="Description" content="人人网 校内是一个真实的社交网络，联络你和你周围的朋友。 加入人人网校内你可以:联络朋友，了解他们的最新动态；和朋友分享相片、音乐和电影；找到老同学，结识新朋友；用照片和日志记录生活,展示自我。">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<!-- 页眉 -->
+	<div id="topnav">
+		<div id="topInner">
+			<div id="logo">
+				<a href="" id="renrenLogo"></a>
+			</div>
+			<span id="topTitle">中国领先的实名制SNS社交网络</span>
+			<div id="topOther">
+				<div class="menu">
+					<a class="menuA" href="">注册</a>
+				</div>
+				<div class="menu">
+					<a class="menuA" href="">给我们提建议</a>
+				</div>
+				<div class="menu" id="moreC">
+					<span class="menuA more" isopen="0">更多</span>
+					<div id="webList">
+						<ul>
+							<li><a href="">分享</a></li>
+							<li><a href="">应用程序</a></li>
+							<li><a href="">公共主页</a></li>
+							<li><a href="">人人生活</a></li>
+							<li><a href="">人人小组</a></li>
+							<li><a href="">同名同姓</a></li>
+							<li><a href="">校园百科</a></li>
+							<li><a href="">大学百科</a></li>
+							<li><a href="">人人热点</a></li>
+							<li><a href="">人人小站</a></li>
+							<li><a href="">人人逛街</a></li>
+							<li><a href="">人人校招</a></li>
+							<li><a href="">人人寻友</a></li>
+							<li><a href="">人人高考</a></li>
+							<li><a href="">公众平台</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="loginPage">
+		<div id="sideColumn">
+			<div id="loginPanel">
+				<span id="loginError"></span>
+				<form id="loginForm">
+					<div class="userName">
+						<a href="" class="userPic"></a>
+						<input type="text" name="email" class="inputText" id="email" tabindex="1" value="邮箱/手机号/用户名">
+					</div>
+					<div class="passward">
+						<a href="" class="pwdPic"></a>
+						<input type="text" name="pwd" class="inputText" id="pwd" tabindex="2" value="请输入密码">
+					</div>
+					<div class="savePwd">
+						<label title="为了确保您的信息安全，请不要在网吧或者公共机房勾选此项！" for="autoLogin" class="labelCheckbox">
+							<input type="checkbox" name="autoLogin" id="autoLogin" value="true" tabindex="4">下次自动登录
+						</label>
+						<a href="" class="forgetPwd">忘记密码?</a>
+					</div>
+					<div class="bottom">
+						<div id="loginbtn" class="btn" value="" tabindex="5"></div>
+					</div>
+				</form>
+				<div id="newStudentReg">
+					<input type="submit" id="newStudentRegbtn" class="btn" value="" tabindex="6">
+				</div>
+				<div id="loginCorp">
+					<span>使用其它帐号登录：</span>
+					<ul>
+						<li><a class="linkPic" href="" id="MSN">MSN</a></li>
+						<li><a class="linkPic" href="" id="A360">360</a></li>
+						<li><a class="linkPic" href="" id="tianyi">天翼</a></li>
+						<li><a class="linkPic" href="" id="baidu">百度</a></li>
+						<li><a class="linkPic" href="" id="yidong">中国移动</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="mainRight">
+			<div class="regist">
+				<h3>欢迎注册人人网</h3>
+				<div class="messagePic"></div>
+				<p>加入人人网，找到老同学，老同事，结识新朋友。</p>
+				<div class="index">
+					<ul>
+						<li>
+							<span>我是：</span>
+							<div class="listDiv">
+								<select class="selector" id="sexSelect" name="sex">
+									<option>选择性别</option>
+									<option value="1">男</option>
+									<option value="0">女</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<span>我的生日：</span>
+							<div class="Contains">
+								<div class="listDiv year">
+									<select class="selector" id="sexSelect" name="sex" style="width:69px">
+										<option>年</option><option>2014</option><option>2013</option><option>2012</option><option>2011</option><option>2010</option><option>2009</option><option>2008</option><option>2007</option><option>2006</option><option>2005</option><option>2004</option><option>2003</option><option>2002</option><option>2001</option><option>2000</option><option>1999</option><option>1998</option><option>1997</option><option>1996</option><option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option><option>1989</option><option>1988</option><option>1987</option><option>1986</option><option>1985</option><option>1984</option><option>1983</option><option>1982</option><option>1981</option><option>1980</option><option>1979</option><option>1978</option><option>1977</option><option>1976</option><option>1975</option><option>1974</option><option>1973</option><option>1972</option><option>1971</option><option>1970</option><option>1969</option><option>1968</option><option>1967</option><option>1966</option><option>1965</option><option>1964</option><option>1963</option><option>1962</option><option>1961</option><option>1960</option><option>1959</option><option>1958</option><option>1957</option><option>1956</option><option>1955</option><option>1954</option><option>1953</option><option>1952</option>
+									</select>
+								</div>
+								<div class="listDiv month">
+									<select class="selector" id="sexSelect" name="sex" style="width:54px">
+										<option>月</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+									</select>
+								</div>
+								<div class="listDiv day">
+									<select class="selector" id="sexSelect" name="sex" style="width:54px">
+										<option>日</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+										<option>13</option>
+										<option>14</option>
+										<option>15</option>
+										<option>16</option>
+										<option>17</option>
+										<option>18</option>
+										<option>19</option>
+										<option>20</option>
+										<option>21</option>
+										<option>22</option>
+										<option>23</option>
+										<option>24</option>
+										<option>25</option>
+										<option>26</option>
+										<option>27</option>
+										<option>28</option>
+										<option>29</option>
+										<option>30</option>
+										<option>31</option>
+									</select>
+								</div>
+							</div>
+						</li>
+						<li>
+							<span>现在是：</span>
+							<div class="listDiv">
+								<select class="selector" id="nowDo" name="stage">
+									<option>选择身份</option>
+									<option value="1">已经工作了</option>
+									<option value="0">正在上大学</option>
+									<option value="1">正在上中学</option>
+									<option value="0">是其他身份</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					<div class="zhucebtn">
+						<input type="submit" class="arrow" value="">
+					</div>
+				</div>
+			</div>
+			<div class="youcando">
+				<span>在人人网可以做什么？</span>
+				<ul>
+					<li>联络朋友，了解他们的最新动态</li>
+					<li>自由、安全地控制个人隐私</li>
+					<li>和朋友分享照片、音乐和视频</li>
+					<li>用照片和日志记录生活，展示自我</li>
+					<li>找到老同学结识新朋友</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="siteFooter">
+			<div class="describe">
+				<span class="copyright">人人网<span title="revision$revxxx$; SJSWT42-226.opi.com">©</span>2014</span>
+				<ul class="link">
+					<li><a href="">关于我们</a></li>
+					<li><a href="">人人游戏</a></li>
+					<li><a href="">经纬网</a></li>
+					<li><a href="">56网</a></li>
+					<li><a href="">手机应用</a></li>
+					<li><a href="">公共主页</a></li>
+					<li><a href="">开放平台</a></li>
+					<li><a href="">自助广告</a></li>
+					<li><a href="">品牌营销</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">人人集团</a></li>
+					<li><a href="">招聘</a></li>
+					<li><a href="">客服帮助</a></li>
+					<li><a href="">隐私</a></li>
+				</ul>
+			</div>
+			<div class="haoes">
+				<p class="company-name">
+					<span>北京千橡网景科技发展有限公司：</span>
+					<span>文网文[2009]169号</span><span class="dot">·</span>
+					<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证090254号</a>
+					<span class="dot">·</span><span>京公网安备110000000009号</span>
+					<span class="dot">·</span><span>甲测资字11002066</span>
+				</p>
+				<span>文化部监督电子邮箱：wlwh@vip.sina.com</span><span class="dot">·</span>
+				<a href="http://a.xnimg.cn/n/core/res/certificate.jpg" target="_blank">互联网药品信息服务资格证</a>
+				<span class="dot">·</span><a href="http://py.qianlong.com/" target="_blank">北京地区网站联合辟谣平台</a><br>
+				<p class="special-add">
+					<span>文明办网文明上网举报电话：4000803580 举报邮箱：admin@renren.com</span>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="http://www.bjjubao.org/" target="_blank"><img src="css/images/bljubao.gif" width="25" height="24">北京互联网举报中心</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="http://www.bj.cyberpolice.cn/index.jsp" target="_blank"><img src="css/images/c_2.jpg" width="25" height="24">网络110报警服务</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="http://www.bjwhzf.gov.cn/accuse.do" target="_blank"><img src="css/images/c_3.jpg" width="25" height="24">北京文化市场举报热线</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+*{margin: 0; padding: 0;}
+body{ width: 100%; overflow-x: hidden; overflow-y: hidden; text-align: left; font-size: 12px; font-family:'Open Sans' Arial,Helvetica,"Microsoft Yahei","Hiragino Sans GB",sans-serif;}
+img{ border: 0px; }
+a{ color: #fff; text-decoration: none;}
+ul,li{ list-style: none; list-style-position: outside; }
+
+
+/******************主要框架begin******************/
+#topnav{ width: 100%; height: 106px;  background:#001f3d url("images/images_sprite.png") repeat-x 0 -2340px;}
+
+/******************主要框架 end ******************/
+
+/******************页眉 begin******************/
+#topNavInner{ width: 960px; height: 106px; margin: 0 auto; position: relative;}
+.logo{ display: block; width: 250px; height: 106px; float: left; background-image: url("images/logo.png"); position: relative;}
+.logoSpan{ display: block; width: 250px; height: 106px; background-color: #001f3d; opacity: 0; }
+.otherLinks{ position: absolute; right: 34px; top: 0; }
+.otherLinks li{ display: inline-block; float: left; height: 21px; font-size: 100%; margin-right: 2px; background-color: #fff;}
+.otherLinks li a{ height: 21px; line-height: 21px; padding: 0 11px; font-size: 12px; color: #000; }
+.otherLinks li a:hover{ text-decoration: underline;}
+#menu{ position: absolute; left: 352px; top: 65px;}
+.menuLi{ display: inline-block; float: left; padding-bottom: 30px; }
+.menuA{ font-size: 16px; color: #fff; font-family: 'Open Sans',Arial,Helvetica,sans-serif; transition: all 0.2s linear; letter-spacing: .7px; display: block; padding-left: 15px; padding-right: 15px;}
+/*.menuA:hover{ text-shadow:5px 5px 15px #FFF;}
+*/
+.subUl{ display: none; position: absolute; z-index: 1000; left: -346px; top: 37px; width: 948px; height: auto; border-top: 4px solid #fff; border-bottom: 1px solid #fff; padding-top: 19px;}
+.top{ width: 237px; height: auto; padding-bottom: 30px; margin-bottom: 10px; float: left; clear: none;}
+.top h4{ font-size: 16px; color: #fff; border-top: 1px solid #bfbfbf; padding-top: 19px; margin-bottom: 12px; letter-spacing: -0.3px; padding-left: 9px;}
+.PicA{ display: block; width: 237px; height: 153px;}
+.PicA img{ width: 237px; height: 153px;}
+.topLi{ display: block; clear: both; margin-bottom: 3px; padding-left: 9px; line-height: 15px; vertical-align: top; overflow: hidden;}
+.topLi a{ font-size: 12px; line-height: 13px; }
+.topLi a:hover{ text-decoration: underline;}
+/******************页眉 end ******************/
+#section{ display: block; width: 100%; height: 100%; overflow: hidden; position: relative; z-index: 0}
+#menban{ display: none; width: 100%; height: 1000px; opacity: 0.8; background-color: #000; position: absolute; z-index: 700;}
+.preloadImages{ display: block; width: 100%; height: 100%; z-index: 100;}
+.preloadImages img{ vertical-align: middle; display: none; transition: all 1s;}
+#prev,#next{height: 100%; width: 100px; line-height: 100%; position: absolute; top: 0; z-index: 150; display: block; text-decoration: none; text-indent: -9999px; background-color: rgba(10,10,10,0); }
+#prev{ left: 0; }
+#prev span{ display: block; width: 29px; height: 91px; background-image: url("images/prev.png"); position: absolute; top: 50%; margin-top: -45px; left: 50%;margin-left: -15px; }
+#next{ right: 0; }
+#next span{ display: block; width: 29px; height: 91px; background-image: url("images/next.png"); position: absolute; top: 50%; margin-top: -45px; left: 50%;margin-left: -15px;}
+
+#preContent{ width: 948px; position: absolute; z-index: 300; left: 200px; top: 150px; bottom: 32px;}
+/*.inner{ width: 948px; height: 350px; position: relative; }*/
+.inner{ width: 948px; height: 100%; position: relative; }
+.#news{ padding-top: 19px; width: 650px; height: 215px; position: absolute; left: 0; bottom: 0; background-color: #f00;}
+.newsUl{ width: 246px; height: 24px; float: left; display: block; margin-left: 42px; margin-right: 8px; background: #fff; position: absolute; bottom: 17px; overflow: hidden;}
+.newsUl span{ display: block; font-size: 16px; color: #002C50; padding-top: 1px; width: 100%; text-indent: 8px; height: 24px; cursor: pointer;}
+.close{ background:url("images/images_sprite.png") no-repeat 222px -106px;}
+.open{ background: url("images/images_sprite.png") no-repeat 222px -72px;}
+.contain{ opacity: 0;}
+.newsUl a{ display: block; width: 246px; height: 131px; }
+.newsUl a img{ width: 246px; height: 131px;}
+.sub{ width: 230px; height: 28px; padding: 5px 8px 5px 8px; color: #8d9091; }
+.sub h3{ font-weight: normal; line-height: 14px; font-size: 12px; overflow: hidden;}
+.newsUlLeft{ margin-left: 315px;}
+ 
+#asideLinks{ display: block; width: 180px; height: 51px; background: rgba(0,0,0,0.7); position: absolute; right: 0; bottom: 15px; padding:12px 10px 45px 0;}
+#asideLinks li{ text-align: right; line-height: 17px;}
+#asideLinks li a{ color: #fff; line-height: 17px; font-family: 'Open Sans',Arial,Helvetica,sans-serif; letter-spacing: .3px;}
+#asideLinks li a:hover{ text-decoration: underline;}
+#share{ width: 145px; height: 22px; position: absolute; right: 10px; bottom: 18px;}
+#share ul li{ width: 24px; height: 21px; float: left;}
+#share ul li a { display: block; width: 24px; height: 21px; background-image: url("images/images_sprite3.png"); background-repeat: no-repeat; }
+#share ul li a:hover{ opacity: 0.7;}
+#share ul li#icon_facebook a { background-position: -175px -71px;}
+#share ul li#icon_twitter a { background-position: -199px -71px;}
+#share ul li#icon_googleplus a { background-position: -227px -71px;}
+#share ul li#icon_youtube a { background-position: -258px -71px;}
+#share ul li#icon_weibo a { background-position: -288px -71px;}
+#share ul li#icon_instagram a { background-position: -318px -71px;}
+
+/*******************底部***********************/
+#prefooter{ width: 100%; position: absolute; left: 0; bottom: 0; height: 32px; z-index: 400; margin: 0 auto; background-color: #fff; border: 1px solid #e4e4e4; border-bottom: 0; font-size: 10px; color: #8d9091; overflow: hidden;}
+#prefooter div{ width: 948px; margin: 0 auto; position: relative; }
+#prefooter p{ margin-left: 22px; margin-top: 10px; float: left; }
+#prefooter ul{float: right; display: inline-block; margin-top: 10px; margin-right: 22px;}
+#prefooter ul li{ display: inline;}
+#prefooter ul li a{ color: #8d9091; float: left; height: 12px; padding: 0 4px 0 7px; outline: 0;}
+#prefooter ul li a:hover{ color: #333; text-decoration: underline;}
+.openFooter{ background: url("images/images_sprite.png") no-repeat 50% -2016px;  display: block; overflow: hidden; width: 26px; height: 32px; position: absolute; left: 457px; top: 0;}
+.closeFooter{ background: url("images/images_sprite.png") no-repeat 50% -2048px; display: block; overflow: hidden; width: 26px; height: 32px; position: absolute; left: 457px; top: 0;}
+
+#footer{ display: none; position: absolute; bottom: 32px; left: 50%; z-index: 200; width: 950px; height: 260px; margin-left: -475px; background: url("images/images_sprite.png") repeat-x 0 -1643px; overflow: hidden; }
+.fContentS{ padding: 0 18px 0 18px; float: left; margin-top: 23px; margin-bottom: 25px; height: 210px;}
+#footer h3{ color: #fff; font-family: 'Open Sans',Arial,Helvetica,sans-serif; font-size: 14px; text-transform: uppercase; margin-bottom: 10px;}
+.watchs{ width: 340px;}
+.collections{ float: left; display: inline; margin-right: 40px; }
+.fContent{ border-left: 1px solid #31495c; width: 147px; }
+#footer ul li a { color: #fff; font-size: 11px; line-height: 18px; text-decoration: none; }
+#footer ul li a:hover{ text-decoration: underline;}
+/*******************底部 end********************/

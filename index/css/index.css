@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0;}
-body{ width: 99%; text-align: center; font-size: 14px; font-family: 宋体,Arial; background-image: url("../images/38.jpg");}
+body{ width: 100%; text-align: center; font-size: 14px; font-family: 宋体,Arial; background-image: url("../images/38.jpg");}
 img{ border: 0px; }
 ul,li{ list-style: none; list-style-position: outside; }
 
@@ -9,7 +9,7 @@ ul,li{ list-style: none; list-style-position: outside; }
 #cityWeather{ width: 220px; height: 20px; line-height: 20px; float: left; padding-left: 15px; }
 #topRight{ width: 500px; height: 20px; line-height: 20px; float: right;}
 #abovePart{ width: 720px; height: 175px; margin: auto; padding-top: 50px ; }
-#mainPart{ width: 910px; height: 325px; margin: 40px auto  20px auto; background-color: rgba(255,255,255,0.3);}
+#mainPart{ width: 910px; height: 325px; margin: 40px auto  20px auto; background-color: #fff; filter:alpha(opacity=20); background-color: rgba(255,255,255,0.3);}
 #Bottom{ width: 1000px; height: 20px; line-height: 20px; font-size: 14px; font-weight: bold; color: #fff; padding: 20px; margin: 0 auto; }
 /*****************主要框架 end*****************/
 
@@ -54,5 +54,5 @@ ul,li{ list-style: none; list-style-position: outside; }
 .ContentItem{ transition: all 2s; -moz-transition: all 2s; /* Firefox 4 */ -webkit-transition: all 2s; /* Safari 和 Chrome */ -o-transition: all 2s;}
 .ContentItemA{ width: 146px; height: 100px; display: block; }
 .ContentItemA img{ width: 146px; height: 100px; }
-.ContentItemSpan{ width: 146px; height: 100px; display: block; background-color: #666; opacity: 0.2; position: absolute; top: 0; left: 0;}
+.ContentItemSpan{ width: 146px; height: 100px; display: block; background-color: #666; filter:alpha(opacity=20); opacity: 0.2; position: absolute; top: 0; left: 0;}
 /*****************主体内容版块 end******************/ 
